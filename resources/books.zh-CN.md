@@ -1,6 +1,6 @@
 # 推荐书籍
 
-**English** | **[中文](resources/books.zh-CN.md)**
+**[English](resources/books.md)** | **中文**
 
 
 > AI PM 的必读书籍

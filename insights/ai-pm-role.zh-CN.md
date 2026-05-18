@@ -1,6 +1,6 @@
 # AI PM 的角色认知
 
-**English** | **[中文](insights/ai-pm-role.zh-CN.md)**
+**[English](insights/ai-pm-role.md)** | **中文**
 
 
 > 从"写文档"到"写指令"

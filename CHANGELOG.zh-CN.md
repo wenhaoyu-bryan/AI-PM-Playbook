@@ -1,6 +1,6 @@
 # 更新日志
 
-**English** | **[中文](CHANGELOG.zh-CN.md)**
+**[English](CHANGELOG.md)** | **中文**
 
 
 > 记录仓库的更新历史

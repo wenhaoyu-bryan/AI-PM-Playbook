@@ -1,6 +1,6 @@
 # Harness Engineering 入门
 
-**English** | **[中文](workflows/harness-engineering.zh-CN.md)**
+**[English](workflows/harness-engineering.md)** | **中文**
 
 
 > 不是写代码，是驾驭 AI 写代码

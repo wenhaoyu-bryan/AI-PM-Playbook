@@ -1,6 +1,6 @@
 # Vibe Coding 实践指南
 
-**English** | **[中文](workflows/vibe-coding.zh-CN.md)**
+**[English](workflows/vibe-coding.md)** | **中文**
 
 
 > 产品经理 + LLM = 全栈开发者

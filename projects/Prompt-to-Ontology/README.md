@@ -1,429 +1,197 @@
 # Ontology OS
 
-> 企业本体操作系统
-> 把企业数据从"表格"变成"活的知识图谱"
-> 通过 Vibe Coding 逆向工程 Palantir AIP
+> Enterprise Ontology Operating System
+> Transform enterprise data from "tables" into "living knowledge graphs"
+> Reverse-engineering Palantir AIP through Vibe Coding
+
+**English** | **[中文](README.zh-CN.md)**
 
 ---
 
-## 项目概述
+## Project Overview
 
-**定位**：企业本体操作系统，把企业数据从"表格"变成"活的知识图谱"
+**Positioning**: Enterprise Ontology Operating System that transforms enterprise data from "tables" into "living knowledge graphs"
 
-**核心价值**：
-- 理解 Palantir AIP 的底层逻辑
-- 验证本体驱动的智能体架构
-- 探索工业 AI Agent 的产品范式
+**Core Value**:
+- Understand the underlying logic of Palantir AIP
+- Validate ontology-driven intelligent agent architecture
+- Explore the product paradigm of industrial AI Agents
 
-**当前状态**：MVP v2
+**Current Status**: MVP v2
 
 ---
 
-## 核心洞察
+## Core Insights
 
-### 架构洞察
+### Architecture Insights
 
-**关键决策**：
-- Neo4j 是数据源，NetworkX 是计算引擎，LLM 是推理层
-- 三者解耦，可以独立替换任何一个而不影响其他
+**Key Decisions**:
+- Neo4j is the data source, NetworkX is the compute engine, LLM is the reasoning layer
+- All three are decoupled and can be independently replaced
 
-**架构图**：
+**Architecture Diagram**:
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   前端      │ →   │   后端      │ →   │   数据库    │
+│   Frontend  │ →   │   Backend   │ →   │   Storage   │
 │  React 18   │     │  FastAPI    │     │  Neo4j 5    │
 │  D3.js      │     │  NetworkX   │     │  SQLite     │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 
-### 产品洞察
+### Product Insights
 
-**关键认知**：
-> "构建本体系统最难的部分不是代码，是心智模型。理解图数据库不是本体，本体不是 Schema，Schema 不是数据模型——这些是同心圆的抽象层级，搞对它们是产品问题，不是工程问题。"
+**Core Cognition**:
+> "The hardest part of building an ontology system is not the code, but the mental model. Understanding that a graph database is not an ontology, an ontology is not a schema, and a schema is not a data model — these are concentric circles of abstraction levels, and getting them right is a product problem, not an engineering problem."
 
-**核心区别**：
-- 图数据库 ≠ 本体
-- 本体 ≠ Schema
-- Schema ≠ 数据模型
+**Key Distinctions**:
+- Graph Database ≠ Ontology
+- Ontology ≠ Schema
+- Schema ≠ Data Model
 
-### 技术洞察
+### Technical Insights
 
-**关键决策**：
-- 事实表是节点，不是边
-- 动作挂对象，状态驱动行为
-- Agent 不自动执行，需要 HITL 审批
-
----
-
-## 技术栈
-
-| 层 | 技术 | 版本 | 职责 |
-|---|------|------|------|
-| 前端框架 | React | 18 | 组件架构 |
-| 样式 | Tailwind CSS | 4 | 暗黑工业风 |
-| 图谱渲染 | D3.js | - | 力导向布局 |
-| CSV 解析 | PapaParse | - | 多行表头 |
-| 后端框架 | FastAPI | 0.115 | 异步 REST API |
-| 图数据库 | Neo4j | 5 | 持久化图存储 |
-| 内存图引擎 | NetworkX | 3.4 | 实时图计算 |
-| LLM 集成 | MiniMax / OpenAI / Anthropic | - | ReAct 推理 |
-| 数据校验 | Pydantic | v2 | 类型安全 |
-| 轻量数据库 | SQLite | - | 种子数据 |
+**Key Decisions**:
+- Fact tables are nodes, not edges
+- Actions are attached to objects, state drives behavior
+- Agent doesn't auto-execute, requires HITL approval
 
 ---
 
-## 项目结构
+## Tech Stack
+
+| Layer | Technology | Version | Responsibility |
+|-------|------------|---------|----------------|
+| Frontend Framework | React | 18 | Component Architecture |
+| Styling | Tailwind CSS | 4 | Dark Industrial Theme |
+| Graph Rendering | D3.js | - | Force-directed Layout |
+| CSV Parsing | PapaParse | - | Multi-row Headers |
+| Backend Framework | FastAPI | 0.115 | Async REST API |
+| Graph Database | Neo4j | 5 | Persistent Graph Storage |
+| In-memory Graph Engine | NetworkX | 3.4 | Real-time Graph Computation |
+| LLM Integration | MiniMax / OpenAI / Anthropic | - | ReAct Reasoning |
+| Data Validation | Pydantic | v2 | Type Safety |
+| Lightweight Database | SQLite | - | Seed Data |
+
+---
+
+## Project Structure
 
 ```
 Ontology MVP Demo/
-├── CLAUDE.md                  # 项目记忆
+├── CLAUDE.md                  # Project Memory
 ├── .gitignore
 ├── backend/
-│   ├── database.py            # 数据层：SQLite 表 + 查询 + 种子数据
-│   ├── ontology.py            # 语义层：NetworkX 图构建 + 路径分析
-│   ├── agent.py               # 智能体层：ReAct 推理 + 动作执行
-│   ├── llm_client.py          # LLM 路由：三后端热切换
-│   ├── data_pipeline.py       # 数据管道：校验 + 批量导入
-│   ├── neo4j_connector.py     # Neo4j 连接层
-│   ├── main.py                # API 层：FastAPI 14+ 端点
+│   ├── database.py            # Data Layer: SQLite tables + queries + seed data
+│   ├── ontology.py            # Semantic Layer: NetworkX graph construction + path analysis
+│   ├── agent.py               # Agent Layer: ReAct reasoning + action execution
+│   ├── llm_client.py          # LLM Router: 3-backend hot-switching
+│   ├── data_pipeline.py       # Data Pipeline: validation + batch import
+│   ├── neo4j_connector.py     # Neo4j Connector
+│   ├── main.py                # API Layer: FastAPI 14+ endpoints
 │   └── requirements.txt
 ├── frontend/
 │   ├── package.json
 │   ├── vite.config.js
 │   ├── index.html
 │   └── src/
-│       ├── App.jsx            # 全局状态 + 导航 + 视图路由
-│       ├── api.js             # Axios API 封装
-│       ├── index.css          # 暗黑工业风全局样式
+│       ├── App.jsx            # Global State + Navigation + View Routing
+│       ├── api.js             # Axios API Wrapper
+│       ├── index.css          # Dark Industrial Theme Global Styles
 │       └── components/
-│           ├── DataPipeline.jsx         # 多表数据流水线
-│           ├── GlobalSchemaMapper.jsx   # 全局映射校准编辑器
-│           ├── D3GraphCanvas.jsx        # D3 图谱画布
-│           ├── OntologySchemaOverview.jsx # 本体 Schema 概览
-│           ├── EntityInspector.jsx      # 节点 360° 详情面板
-│           ├── OntologyBrowser.jsx      # 本体浏览器
-│           ├── AgentWorkshop.jsx        # Agent 推理日志
-│           └── LinkTooltip.jsx          # 链路悬停提示
-├── sample-data/               # 演示用 CSV 数据集
+│           ├── DataPipeline.jsx         # Multi-table Data Pipeline
+│           ├── GlobalSchemaMapper.jsx   # Global Schema Mapping Editor
+│           ├── D3GraphCanvas.jsx        # D3 Graph Canvas
+│           ├── OntologySchemaOverview.jsx # Ontology Schema Overview
+│           ├── EntityInspector.jsx      # Node 360° Detail Panel
+│           ├── OntologyBrowser.jsx      # Ontology Browser
+│           ├── AgentWorkshop.jsx        # Agent Reasoning Log
+│           └── LinkTooltip.jsx          # Link Hover Tooltip
+├── sample-data/               # Demo CSV Datasets
 └── docs/
-    ├── PRD.md                 # 产品需求文档
-    ├── ARCHITECTURE.md        # 架构设计文档
-    └── phases/                # 开发阶段规划文档
+    ├── PRD.md                 # Product Requirements Document
+    ├── ARCHITECTURE.md        # Architecture Design Document
+    └── phases/                # Development Phase Plans
 ```
 
 ---
 
-## 核心功能
+## Core Features
 
-### 1. 数据流水线
+### 1. Data Pipeline
 
-**功能**：从 CSV 文件导入数据到知识图谱
+**Feature**: Import data from CSV files into knowledge graph
 
-**流程**：
+**Flow**:
 ```
-CSV 文件 → PapaParse 解析 → LLM 推断 Schema → UNWIND 批量导入 → Neo4j
+CSV File → PapaParse Parse → LLM Infer Schema → UNWIND Batch Import → Neo4j
 ```
 
-**关键特性**：
-- 多行表头支持
-- LLM 自动推断实体和关系
-- 批量导入优化
-
-**技术细节**：
-- PapaParse 解析 CSV
-- LLM 生成 MappingSchema JSON
-- UNWIND 批量写入 Neo4j
+**Key Features**:
+- Multi-row header support
+- LLM automatic entity and relationship inference
+- Batch import optimization
 
 ---
 
-### 2. 知识图谱
+### 2. Knowledge Graph
 
-**功能**：可视化展示实体和关系
+**Feature**: Visualize entities and relationships
 
-**技术实现**：
-- D3.js 力导向布局
-- Canvas 节点 + SVG 连线
-- 支持 5000+ 节点
+**Technical Implementation**:
+- D3.js force-directed layout
+- Canvas nodes + SVG connections
+- Supports 5000+ nodes
 
-**交互**：
-- 点击节点 → 高亮上下游
-- 拖拽节点 → 调整布局
-- 缩放和平移
-
----
-
-### 3. 本体 Schema
-
-**功能**：展示类、关系、属性、基数
-
-**技术实现**：
-- 从 Neo4j 自动提取
-- 类卡片 + 关系链 + 约束状态
-- Schema 约束检查
-
-**价值**：
-- 理解数据结构
-- 验证数据质量
-- 指导 Agent 推理
+**Interactions**:
+- Click node → highlight upstream/downstream
+- Drag node → adjust layout
+- Zoom and pan
 
 ---
 
-### 4. Agent 推理
+### 3. Ontology Schema
 
-**功能**：基于知识图谱的智能推理
+**Feature**: Display classes, relationships, properties, cardinality
 
-**技术实现**：
-- ReAct 推理引擎
-- Tool-Calling 工具调用
-- HITL 审批流程
-
-**工具**：
-- 查询图谱
-- 分析影响
-- 执行动作
+**Technical Implementation**:
+- Automatic extraction from Neo4j
+- Class cards + relationship chains + constraint status
+- Schema constraint checking
 
 ---
 
-## 认知演进
+### 4. Agent Reasoning
 
-### 阶段一：打破"静态图谱"的幻觉
+**Feature**: Intelligent reasoning based on knowledge graph
 
-**核心认知**：没有 Action 的图谱只是一张好看的网。
-
-**关键洞察**：
-- 图谱里的节点不是一个数据点——它是一个带有状态、关系和**动词**的业务实体
-- Supplier 节点不只有名字和风险等级；它可以被"审计"、被"升级"、被"替换"
-
-**解决方案**：动作系统（Action System）
-- 每种节点类型都有基于当前状态计算的上下文敏感操作按钮
-- 库存低了？"创建采购订单"按钮亮起
-- 缺陷率高了？"升级到 QA"按钮激活
+**Technical Implementation**:
+- ReAct reasoning engine
+- Tool-Calling function calls
+- HITL approval workflow
 
 ---
 
-### 阶段二：理解"Ontology 即 Runtime"
+## Vibe Coding Practice
 
-**核心认知**：本体不是文档，是操作系统。
+### Practice Method
 
-**关键洞察**：
-- 在传统应用里，数据模型是被动的——它躺在数据库里等着被查询
-- 在本体驱动的系统里， Schema *就是*执行上下文
-- Agent 不是"知道"业务逻辑——它是通过遍历 Schema 来**发现**业务逻辑的
+**Method**: A product manager defines product intent, architecture boundaries, and design constraints, while a large language model handles code generation, debugging, and iteration.
 
-**解决方案**：
-- 本体提供类型语义、推理上下文、动作可能性
-- Agent 通过本体查询，而不是直接查询原始数据
+**Most Valuable Cognition**:
+> "The hardest part of building an ontology system is not the code, but the mental model."
 
----
-
-### 阶段三：打通数据流水线
-
-**核心认知**：LLM 结构化推断解决冷启动问题。
-
-**关键洞察**：
-- 把一张表的元数据喂给模型，让它输出结构化的 MappingSchema JSON
-- 必须告诉模型，事实表是节点（Node），不是边（Edge）
-- 搞错这一点，整个图谱拓扑就塌了
-
-**解决方案**：
-- 多表联合推断
-- 自动发现跨表关系
-- 一次 LLM 调用生成完整的本体 Schema
+**Practice Gains**:
+- Not "learning to code", but "learning to think architecturally"
+- The output is not code, but a cognitive framework
+- PM + LLM can deliver full-stack prototypes
 
 ---
 
-## 开发过程
+## GitHub
 
-### 阶段 1：需求定义（10 min）
-
-**输入**：理解 Palantir AIP 的底层逻辑
-
-**输出**：产品需求文档
-
-**关键决策**：
-- 逆向工程 Palantir AIP
-- 验证本体驱动架构
-- 探索工业 AI Agent
+**Repository**: [Prompt-to-Ontology](https://github.com/wenhaoyu-bryan/Prompt-to-Ontology)
 
 ---
 
-### 阶段 2：架构设计（20 min）
-
-**输入**：产品需求文档
-
-**输出**：系统架构和 API 设计
-
-**关键决策**：
-- Neo4j + NetworkX + LLM 三层架构
-- 前后端分离
-- HITL 审批流程
-
----
-
-### 阶段 3：代码生成（30 min × N）
-
-**输入**：系统架构和 API 设计
-
-**输出**：可运行的 MVP
-
-**迭代过程**：
-- Phase 1: Neo4j 作为主存储
-- Phase 2: D3.js 图谱渲染
-- Phase 3: CSV/JSON 数据导入
-- Phase 4: SAP 风格演示数据集
-- Phase 5: 系统泛化
-- Phase 6: 多表数据流水线
-- Phase 7: 流水线+图谱一体化
-
----
-
-### 阶段 4：迭代优化（按需）
-
-**输入**：用户反馈和产品洞察
-
-**输出**：优化后的版本
-
-**迭代内容**：
-- 添加动作系统
-- 优化 Agent 推理
-- 完善 HITL 审批
-- 支持多 LLM
-
----
-
-## 关键决策
-
-### 1. 三层架构
-
-**决策**：Neo4j 是数据源，NetworkX 是计算引擎，LLM 是推理层
-
-**原因**：
-- 解耦各层，独立替换
-- Neo4j 负责持久化
-- NetworkX 负责实时计算
-- LLM 负责推理
-
-**权衡**：
-- ✅ 架构清晰
-- ✅ 易于扩展
-- ⚠️ 复杂度高
-
----
-
-### 2. 事实表是节点
-
-**决策**：事实表（订单、库存）是节点，不是边
-
-**原因**：
-- 订单本身是独立实体
-- 订单有属性、状态、动作
-- 订单通过边关联到客户和产品
-
-**权衡**：
-- ✅ 图谱拓扑正确
-- ✅ 支持复杂查询
-- ⚠️ 需要正确理解
-
----
-
-### 3. HITL 审批
-
-**决策**：Agent 推理结果需要人工审批
-
-**原因**：
-- 半导体制造容错率低
-- 错误决策可能造成重大损失
-- 人类保留最终决策权
-
-**权衡**：
-- ✅ 安全可靠
-- ✅ 符合工业场景
-- ⚠️ 效率稍低
-
----
-
-## Vibe Coding 实践
-
-### 实践方式
-
-**方式**：一个产品经理定义产品意图、架构边界和设计约束，一个大语言模型负责代码生成、调试和迭代。
-
-**参与者**：
-- 人类：Wenhao Yu（AI PM）
-- AI：Claude（大语言模型）
-
-**工具**：
-- Cursor（初期）
-- Claude Code（后期）
-
-### 实践收获
-
-**最有价值的认知**：
-> "构建本体系统最难的部分不是代码，是心智模型。"
-
-**实践收获**：
-- 不是"学编程"，是"学架构思维"
-- 产出的不是代码，是认知框架
-- PM + LLM 可以交付全栈原型
-
-### 实践效率
-
-**时间投入**：
-- 需求定义：10 min
-- 架构设计：20 min
-- 代码生成：30 min × N 轮
-- 迭代优化：按需
-
-**产出**：
-- 一个可运行的本体操作系统
-- 一套完整的架构认知框架
-- 一篇深度技术博客
-
----
-
-## 后续计划
-
-### 短期（1-2 周）
-
-- [ ] 完善本体 Schema 可视化
-- [ ] 优化 Agent 推理
-- [ ] 添加更多的动作类型
-- [ ] 完善 HITL 审批流程
-
-### 中期（1-2 个月）
-
-- [ ] 支持更多数据源
-- [ ] 添加权限管理
-- [ ] 优化性能
-- [ ] 添加单元测试
-
-### 长期（3-6 个月）
-
-- [ ] 支持多租户
-- [ ] 添加协作功能
-- [ ] 上线生产环境
-- [ ] 开源发布
-
----
-
-## 总结
-
-**项目价值**：
-- 验证了本体驱动的智能体架构
-- 展示了 Vibe Coding 的实践方式
-- 提供了可复用的架构和组件
-
-**关键收获**：
-- 本体不是文档，是操作系统
-- 事实表是节点，不是边
-- Agent 通过本体发现业务逻辑
-
-**后续方向**：
-- 从 MVP 到产品
-- 从单体到微服务
-- 从内部到开源
-
----
-
-*最后更新：2026-05-18*
-*基于 TCL 格创东智的项目实践*
+*Last Updated: 2026-05-18*
+*Based on TCL Gechuang Dongzhi Project Practice*

@@ -1,6 +1,6 @@
 # 需求拆解框架
 
-**English** | **[中文](skills/requirements-breakdown/README.zh-CN.md)**
+**[English](skills/requirements-breakdown/README.md)** | **中文**
 
 
 > 从模糊需求到结构化任务

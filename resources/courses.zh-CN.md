@@ -1,6 +1,6 @@
 # 推荐课程
 
-**English** | **[中文](resources/courses.zh-CN.md)**
+**[English](resources/courses.md)** | **中文**
 
 
 > AI PM 的学习路径
