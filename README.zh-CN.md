@@ -108,6 +108,26 @@ AI-PM-Playbook/
 
 ---
 
+### 4. Vue 3 + X6 原型技术栈
+
+**核心理念**：用最少代码实现生产级图编辑能力，适合 B 端可视化产品
+
+**技术栈**：
+- Vue 3 + TypeScript + Vite 5
+- Element Plus（70+ UI 组件）
+- AntV X6（图引擎，7 个插件全开）
+- dagre（自动布局算法）
+
+**关键优势**：AntV X6 比 D3/react-flow 节省 2-4 周图编辑开发
+
+**效率提升**：60 分钟完成完整图编辑原型（20x 提速）
+
+**成本**：¥0 — 所有库均为 MIT/Apache 2.0 开源许可
+
+**详细内容**：[skills/vue3-x6-prototype-stack/](skills/vue3-x6-prototype-stack/)
+
+---
+
 ## 💡 认知和感悟
 
 ### AI PM 的角色演变
@@ -272,6 +292,6 @@ MIT License - 自由使用和分享
 
 ---
 
-**最后更新**：2026-05-18
+**最后更新**：2026-05-26
 **维护者**：Wenhao Yu (余文豪)
 **状态**：🟢 积极更新中

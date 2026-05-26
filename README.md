@@ -113,6 +113,26 @@ AI Native:   Requirements → AI PRD → AI Prototype → Iterate → Ship (1-2 
 
 ---
 
+### 4. Vue 3 + X6 Prototype Stack
+
+**What**: A frontend tech stack for B-side products with complex visualization needs — graph editing, drag-drop, auto-layout, all out of the box.
+
+**Tech Stack**:
+- Vue 3 + TypeScript + Vite 5
+- Element Plus (70+ UI components)
+- AntV X6 (graph engine with 7 plugins)
+- dagre (auto-layout algorithm)
+
+**Key Advantage**: AntV X6 saves 2-4 weeks vs building graph editing with D3 or react-flow.
+
+**Efficiency**: Full graph editing prototype in ~60 minutes, 20x faster than from-scratch development.
+
+**Cost**: $0 — All libraries MIT/Apache 2.0 licensed.
+
+**Details**: [skills/vue3-x6-prototype-stack/](skills/vue3-x6-prototype-stack/)
+
+---
+
 ## 💡 Key Insights
 
 ### The AI PM Role Evolution
@@ -256,6 +276,6 @@ MIT License — use freely, share widely
 
 ---
 
-**Last Updated**: 2026-05-18  
+**Last Updated**: 2026-05-26  
 **Status**: 🟢 Actively maintained  
 **Stars**: If you find this useful, please star the repo!
