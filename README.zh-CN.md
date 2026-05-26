@@ -35,10 +35,11 @@
 ```
 AI-PM-Playbook/
 ├── README.md                    # 你正在读的文件
-├── skills/                      # 可复用的技能
-│   ├── pm-prototype-workflow/   # AI Native 原型开发工作流
+├── skills/                      # 可复用技能 & 工作流
+│   ├── pm-prototype-workflow/   # AI Native 原型开发工作流（React 版）
+│   ├── vue3-x6-prototype-stack/ # Vue 3 + Element Plus + AntV X6（B 端）
 │   ├── requirements-breakdown/  # 需求拆解框架
-│   └── ...                      # 更多技能
+│   └── ...
 ├── workflows/                   # 工作流程
 │   ├── vibe-coding.md          # Vibe Coding 实践指南
 │   ├── harness-engineering.md  # Harness Engineering 入门

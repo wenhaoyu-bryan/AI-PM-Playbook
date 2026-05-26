@@ -47,7 +47,8 @@ AI-PM-Playbook/
 ├── README.md                    # English version (you are here)
 ├── README.zh-CN.md              # 中文版
 ├── skills/                      # Reusable skills & workflows
-│   ├── pm-prototype-workflow/   # AI Native prototype development (15-20x faster)
+│   ├── pm-prototype-workflow/   # AI Native prototype development (React)
+│   ├── vue3-x6-prototype-stack/ # Vue 3 + Element Plus + AntV X6 (B-side)
 │   ├── requirements-breakdown/  # Requirements → structured tasks framework
 │   └── ...
 ├── workflows/                   # Detailed workflow guides

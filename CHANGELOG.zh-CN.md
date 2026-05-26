@@ -8,6 +8,27 @@
 
 ---
 
+## 2026-05-26
+
+### 新增 Vue 3 + X6 原型技术栈 Skill
+
+**新增内容**：
+- ✅ skills/vue3-x6-prototype-stack/ - Vue 3 + Element Plus + AntV X6 前端原型技术栈
+  - README.md - English version
+  - README.zh-CN.md - 中文版
+  - 涵盖：技术栈选型、核心组件、项目结构、最佳实践、常见问题
+
+**关键收获**：
+- AntV X6 比 D3/react-flow 节省 2-4 周图编辑开发
+- Element Plus 70+ 组件开箱即用，适合 B 端原型
+- 整套技术栈 100% 开源（MIT/Apache 2.0），可商用
+
+**下一步**：
+- [ ] 添加更多的技术栈 skill（React 版、Flutter 版）
+- [ ] 补充项目案例中的技术栈使用说明
+
+---
+
 ## 2026-05-18
 
 ### 仓库初始化
