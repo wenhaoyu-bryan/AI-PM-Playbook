@@ -1,10 +1,10 @@
-# 推荐课程
+# Recommended Courses
 
 **English** | **[中文](resources/courses.zh-CN.md)**
 
 
-> AI PM 的学习路径
-> 从 Prompt Engineering 到 LLM 应用开发
+> The learning path for AI PMs
+> From Prompt Engineering to LLM Application Development
 
 ---
 
@@ -12,364 +12,364 @@
 
 ### 1. Prompt Engineering for Developers
 
-**平台**：DeepLearning.AI
-**讲师**：Andrew Ng, Isa Fulford
-**时长**：约 1 小时
-**价格**：免费
+**Platform**: DeepLearning.AI
+**Instructor**: Andrew Ng, Isa Fulford
+**Duration**: ~1 hour
+**Price**: Free
 
-**课程内容**：
-- Prompt Engineering 的基本原则
-- 如何设计有效的 Prompt
-- 如何迭代优化 Prompt
-- 常见的 Prompt 技巧
+**Course Content**:
+- Fundamental principles of Prompt Engineering
+- How to design effective Prompts
+- How to iteratively optimize Prompts
+- Common Prompt techniques
 
-**适合谁**：
-- 想学习 Prompt Engineering 的人
-- 想提升 AI 工具使用效率的人
-- 想与 AI 有效沟通的人
+**Who It's For**:
+- Anyone who wants to learn Prompt Engineering
+- Anyone who wants to improve their efficiency with AI tools
+- Anyone who wants to communicate effectively with AI
 
-**关键收获**：
-- Prompt Engineering 是 AI PM 的核心技能
-- 好的 Prompt 需要清晰、具体、完整
-- 迭代优化是提升 Prompt 质量的关键
+**Key Takeaways**:
+- Prompt Engineering is a core skill for AI PMs
+- Good Prompts need to be clear, specific, and complete
+- Iterative optimization is key to improving Prompt quality
 
-**学习建议**：
-- 边学边实践
-- 用真实项目练习
-- 记录有效的 Prompt 模板
+**Learning Tips**:
+- Practice while you learn
+- Use real projects for practice
+- Document effective Prompt templates
 
 ---
 
 ### 2. ChatGPT Prompt Engineering for Developers
 
-**平台**：DeepLearning.AI
-**讲师**：Andrew Ng, Isa Fulford
-**时长**：约 1 小时
-**价格**：免费
+**Platform**: DeepLearning.AI
+**Instructor**: Andrew Ng, Isa Fulford
+**Duration**: ~1 hour
+**Price**: Free
 
-**课程内容**：
-- ChatGPT 的工作原理
-- 如何设计有效的 Prompt
-- 如何处理边界情况
-- 如何优化 Prompt
+**Course Content**:
+- How ChatGPT works
+- How to design effective Prompts
+- How to handle edge cases
+- How to optimize Prompts
 
-**适合谁**：
-- 想深入学习 Prompt Engineering 的人
-- 想理解 ChatGPT 工作原理的人
-- 想提升 Prompt 设计能力的人
+**Who It's For**:
+- Anyone who wants to dive deeper into Prompt Engineering
+- Anyone who wants to understand how ChatGPT works
+- Anyone who wants to improve their Prompt design skills
 
-**关键收获**：
-- 理解 ChatGPT 的工作原理
-- 学习如何设计有效的 Prompt
-- 掌握常见的 Prompt 技巧
+**Key Takeaways**:
+- Understand how ChatGPT works
+- Learn how to design effective Prompts
+- Master common Prompt techniques
 
 ---
 
-## LLM 应用开发
+## LLM Application Development
 
 ### 3. LangChain for LLM Application Development
 
-**平台**：DeepLearning.AI
-**讲师**：Harrison Chase, Andrew Ng
-**时长**：约 1 小时
-**价格**：免费
+**Platform**: DeepLearning.AI
+**Instructor**: Harrison Chase, Andrew Ng
+**Duration**: ~1 hour
+**Price**: Free
 
-**课程内容**：
-- LangChain 的核心概念
-- 如何使用 LangChain 构建应用
-- 如何集成外部工具
-- 如何优化 LLM 应用
+**Course Content**:
+- Core concepts of LangChain
+- How to build applications with LangChain
+- How to integrate external tools
+- How to optimize LLM applications
 
-**适合谁**：
-- 想学习 LLM 应用开发的人
-- 想使用 LangChain 构建应用的人
-- 想集成外部工具的人
+**Who It's For**:
+- Anyone who wants to learn LLM application development
+- Anyone who wants to build applications with LangChain
+- Anyone who wants to integrate external tools
 
-**关键收获**：
-- LangChain 是 LLM 应用开发的利器
-- 学习如何集成外部工具
-- 掌握 LLM 应用的优化技巧
+**Key Takeaways**:
+- LangChain is a powerful tool for LLM application development
+- Learn how to integrate external tools
+- Master optimization techniques for LLM applications
 
 ---
 
 ### 4. Building Systems with the ChatGPT API
 
-**平台**：DeepLearning.AI
-**讲师**：Andrew Ng, Isa Fulford
-**时长**：约 1 小时
-**价格**：免费
+**Platform**: DeepLearning.AI
+**Instructor**: Andrew Ng, Isa Fulford
+**Duration**: ~1 hour
+**Price**: Free
 
-**课程内容**：
-- 如何使用 ChatGPT API
-- 如何构建多步骤的工作流
-- 如何评估和优化系统
-- 如何处理错误和边界情况
+**Course Content**:
+- How to use the ChatGPT API
+- How to build multi-step workflows
+- How to evaluate and optimize systems
+- How to handle errors and edge cases
 
-**适合谁**：
-- 想使用 ChatGPT API 的人
-- 想构建复杂工作流的人
-- 想优化 LLM 系统的人
+**Who It's For**:
+- Anyone who wants to use the ChatGPT API
+- Anyone who wants to build complex workflows
+- Anyone who wants to optimize LLM systems
 
-**关键收获**：
-- 学习如何使用 ChatGPT API
-- 掌握多步骤工作流的设计
-- 学习如何评估和优化系统
+**Key Takeaways**:
+- Learn how to use the ChatGPT API
+- Master multi-step workflow design
+- Learn how to evaluate and optimize systems
 
 ---
 
-## AI 产品管理
+## AI Product Management
 
 ### 5. AI Product Management
 
-**平台**：Coursera
-**讲师**：University of Pennsylvania
-**时长**：约 4 周
-**价格**：付费（可免费旁听）
+**Platform**: Coursera
+**Instructor**: University of Pennsylvania
+**Duration**: ~4 weeks
+**Price**: Paid (free audit available)
 
-**课程内容**：
-- AI 产品的特点
-- AI 产品的开发流程
-- AI 产品的评估指标
-- AI 产品的落地案例
+**Course Content**:
+- Characteristics of AI products
+- AI product development process
+- AI product evaluation metrics
+- AI product implementation case studies
 
-**适合谁**：
-- 想成为 AI PM 的人
-- 想理解 AI 产品的人
-- 想做 AI 产品的人
+**Who It's For**:
+- Anyone who wants to become an AI PM
+- Anyone who wants to understand AI products
+- Anyone who wants to build AI products
 
-**关键收获**：
-- AI 产品有其特殊性
-- AI 产品需要更多验证
-- AI 产品需要持续迭代
+**Key Takeaways**:
+- AI products have their own unique characteristics
+- AI products require more validation
+- AI products require continuous iteration
 
 ---
 
 ### 6. Generative AI for Everyone
 
-**平台**：DeepLearning.AI
-**讲师**：Andrew Ng
-**时长**：约 3 周
-**价格**：免费
+**Platform**: DeepLearning.AI
+**Instructor**: Andrew Ng
+**Duration**: ~3 weeks
+**Price**: Free
 
-**课程内容**：
-- 生成式 AI 的工作原理
-- 如何使用生成式 AI
-- 生成式 AI 的应用场景
-- 生成式 AI 的未来趋势
+**Course Content**:
+- How generative AI works
+- How to use generative AI
+- Applications of generative AI
+- Future trends of generative AI
 
-**适合谁**：
-- 想理解生成式 AI 的人
-- 想使用生成式 AI 的人
-- 想探索生成式 AI 应用的人
+**Who It's For**:
+- Anyone who wants to understand generative AI
+- Anyone who wants to use generative AI
+- Anyone who wants to explore generative AI applications
 
-**关键收获**：
-- 理解生成式 AI 的工作原理
-- 学习如何使用生成式 AI
-- 探索生成式 AI 的应用场景
+**Key Takeaways**:
+- Understand how generative AI works
+- Learn how to use generative AI
+- Explore applications of generative AI
 
 ---
 
-## 技术架构
+## Technical Architecture
 
 ### 7. Machine Learning Specialization
 
-**平台**：Coursera
-**讲师**：Andrew Ng
-**时长**：约 3 个月
-**价格**：付费（可免费旁听）
+**Platform**: Coursera
+**Instructor**: Andrew Ng
+**Duration**: ~3 months
+**Price**: Paid (free audit available)
 
-**课程内容**：
-- 机器学习的基础知识
-- 监督学习
-- 无监督学习
-- 神经网络
+**Course Content**:
+- Machine learning fundamentals
+- Supervised learning
+- Unsupervised learning
+- Neural networks
 
-**适合谁**：
-- 想理解机器学习的人
-- 想与工程师有效沟通的人
-- 想设计 AI 产品的人
+**Who It's For**:
+- Anyone who wants to understand machine learning
+- Anyone who wants to communicate effectively with engineers
+- Anyone who wants to design AI products
 
-**关键收获**：
-- 理解机器学习的基础知识
-- 学习如何评估模型
-- 掌握常见的机器学习算法
+**Key Takeaways**:
+- Understand machine learning fundamentals
+- Learn how to evaluate models
+- Master common machine learning algorithms
 
 ---
 
 ### 8. Deep Learning Specialization
 
-**平台**：Coursera
-**讲师**：Andrew Ng
-**时长**：约 5 个月
-**价格**：付费（可免费旁听）
+**Platform**: Coursera
+**Instructor**: Andrew Ng
+**Duration**: ~5 months
+**Price**: Paid (free audit available)
 
-**课程内容**：
-- 深度学习的基础知识
-- 卷积神经网络
-- 循环神经网络
-- 序列模型
+**Course Content**:
+- Deep learning fundamentals
+- Convolutional Neural Networks
+- Recurrent Neural Networks
+- Sequence models
 
-**适合谁**：
-- 想深入理解深度学习的人
-- 想设计复杂 AI 系统的人
-- 想与深度学习工程师沟通的人
+**Who It's For**:
+- Anyone who wants to deeply understand deep learning
+- Anyone who wants to design complex AI systems
+- Anyone who wants to communicate with deep learning engineers
 
-**关键收获**：
-- 理解深度学习的基础知识
-- 学习如何设计神经网络
-- 掌握常见的深度学习架构
+**Key Takeaways**:
+- Understand deep learning fundamentals
+- Learn how to design neural networks
+- Master common deep learning architectures
 
 ---
 
-## 学习路径
+## Learning Path
 
-### 入门路径（0-3 个月）
+### Beginner Path (0–3 months)
 
-**阶段 1：Prompt Engineering（0-1 个月）**
+**Phase 1: Prompt Engineering (0–1 month)**
 1. Prompt Engineering for Developers
 2. ChatGPT Prompt Engineering for Developers
 
-**阶段 2：LLM 应用开发（1-2 个月）**
+**Phase 2: LLM Application Development (1–2 months)**
 3. LangChain for LLM Application Development
 4. Building Systems with the ChatGPT API
 
-**阶段 3：AI 产品管理（2-3 个月）**
+**Phase 3: AI Product Management (2–3 months)**
 5. AI Product Management
 6. Generative AI for Everyone
 
 ---
 
-### 进阶路径（3-6 个月）
+### Advanced Path (3–6 months)
 
-**阶段 4：机器学习基础（3-4 个月）**
+**Phase 4: Machine Learning Fundamentals (3–4 months)**
 7. Machine Learning Specialization
 
-**阶段 5：深度学习（4-6 个月）**
+**Phase 5: Deep Learning (4–6 months)**
 8. Deep Learning Specialization
 
 ---
 
-## 学习建议
+## Learning Tips
 
-### 1. 带着问题学
+### 1. Learn with Questions in Mind
 
-**方法**：
-- 学之前先想清楚想解决什么问题
-- 学的时候带着问题找答案
-- 学完后总结关键收获
+**Approach**:
+- Before studying, clarify what problem you want to solve
+- While studying, seek answers to your questions
+- After studying, summarize key takeaways
 
-**示例**：
-- 问题：如何设计有效的 Prompt？
-- 学习：Prompt Engineering for Developers
-- 收获：Prompt 需要清晰、具体、完整
-
----
-
-### 2. 边学边实践
-
-**方法**：
-- 学完一个知识点就尝试应用
-- 用真实项目练习
-- 记录实践中的问题和收获
-
-**示例**：
-- 知识点：如何设计有效的 Prompt
-- 实践：用 Prompt 生成产品需求文档
-- 收获：Prompt 需要包含具体的约束和验收标准
+**Example**:
+- Question: How do I design effective Prompts?
+- Study: Prompt Engineering for Developers
+- Takeaway: Prompts need to be clear, specific, and complete
 
 ---
 
-### 3. 建立知识体系
+### 2. Practice While You Learn
 
-**方法**：
-- 做笔记，记录关键概念和框架
-- 建立知识之间的联系
-- 定期复习和总结
+**Approach**:
+- Try applying each concept right after learning it
+- Use real projects for practice
+- Document problems and insights from practice
 
-**工具**：
-- Notion：知识管理
-- Obsidian：双向链接笔记
-- Anki：记忆卡片
-
----
-
-### 4. 加入社区
-
-**方法**：
-- 加入相关的学习社区
-- 参与讨论和交流
-- 分享自己的学习心得
-
-**推荐社区**：
-- DeepLearning.AI 社区
-- LangChain 社区
-- AI PM 社区
+**Example**:
+- Concept: How to design effective Prompts
+- Practice: Use Prompts to generate product requirement documents
+- Takeaway: Prompts need to include specific constraints and acceptance criteria
 
 ---
 
-## 学习资源
+### 3. Build a Knowledge System
 
-### 在线平台
+**Approach**:
+- Take notes, record key concepts and frameworks
+- Build connections between pieces of knowledge
+- Review and summarize regularly
 
-**免费平台**：
+**Tools**:
+- Notion: Knowledge management
+- Obsidian: Bidirectional linked notes
+- Anki: Flashcards
+
+---
+
+### 4. Join Communities
+
+**Approach**:
+- Join relevant learning communities
+- Participate in discussions and exchanges
+- Share your own learning insights
+
+**Recommended Communities**:
+- DeepLearning.AI community
+- LangChain community
+- AI PM community
+
+---
+
+## Learning Resources
+
+### Online Platforms
+
+**Free Platforms**:
 - DeepLearning.AI
-- Coursera（可免费旁听）
-- edX（可免费旁听）
+- Coursera (free audit available)
+- edX (free audit available)
 - YouTube
 
-**付费平台**：
-- Coursera（付费证书）
+**Paid Platforms**:
+- Coursera (paid certificates)
 - Udacity
 - Udemy
 
 ---
 
-### 书籍
+### Books
 
-**入门书籍**：
-- 《Prompt Engineering for Developers》
-- 《LangChain 实战》
-- 《AI 产品经理的实操手册》
+**Beginner Books**:
+- "Prompt Engineering for Developers"
+- "LangChain in Action"
+- "The AI Product Manager's Practical Handbook"
 
-**进阶书籍**：
-- 《Designing Machine Learning Systems》
-- 《Building Machine Learning Powered Applications》
-- 《AI 产品设计》
-
----
-
-### 博客和文档
-
-**官方文档**：
-- OpenAI API 文档
-- LangChain 文档
-- Hugging Face 文档
-
-**技术博客**：
-- DeepLearning.AI 博客
-- LangChain 博客
-- Hugging Face 博客
+**Advanced Books**:
+- "Designing Machine Learning Systems"
+- "Building Machine Learning Powered Applications"
+- "AI Product Design"
 
 ---
 
-## 总结
+### Blogs and Documentation
 
-**核心课程**：
-- Prompt Engineering：Prompt Engineering for Developers
-- LLM 应用开发：LangChain for LLM Application Development
-- AI 产品管理：AI Product Management
+**Official Documentation**:
+- OpenAI API Documentation
+- LangChain Documentation
+- Hugging Face Documentation
 
-**学习路径**：
-- 入门：Prompt Engineering → LLM 应用开发 → AI 产品管理
-- 进阶：机器学习 → 深度学习
-
-**学习建议**：
-- 带着问题学
-- 边学边实践
-- 建立知识体系
-- 加入社区
+**Technical Blogs**:
+- DeepLearning.AI Blog
+- LangChain Blog
+- Hugging Face Blog
 
 ---
 
-*最后更新：2026-05-18*
-*基于个人学习和实践经验*
+## Summary
+
+**Core Courses**:
+- Prompt Engineering: Prompt Engineering for Developers
+- LLM Application Development: LangChain for LLM Application Development
+- AI Product Management: AI Product Management
+
+**Learning Path**:
+- Beginner: Prompt Engineering → LLM Application Development → AI Product Management
+- Advanced: Machine Learning → Deep Learning
+
+**Learning Tips**:
+- Learn with questions in mind
+- Practice while you learn
+- Build a knowledge system
+- Join communities
+
+---
+
+*Last Updated: 2026-05-26*
+*Based on personal learning and practical experience*

@@ -1,308 +1,308 @@
-# Vibe Coding 实践指南
+# Vibe Coding Practice Guide
 
 **English** | **[中文](workflows/vibe-coding.zh-CN.md)**
 
 
-> 产品经理 + LLM = 全栈开发者
-> 不是"学编程"，是"学架构思维"
+> Product Manager + LLM = Full-Stack Developer
+> Not "learning to code" — "learning to think architecturally"
 
 ---
 
-## 什么是 Vibe Coding？
+## What is Vibe Coding?
 
-**定义**：一个产品经理定义产品意图、架构边界和设计约束，一个大语言模型负责代码生成、调试和迭代。
+**Definition**: A product manager defines product intent, architectural boundaries, and design constraints, while a large language model handles code generation, debugging, and iteration.
 
-**核心价值**：
-- 产品经理直接接触实现，不需要传统软件工程师
-- 产出的不是代码，是认知
-- 通过构建来理解系统，而不是通过阅读文档
+**Core Value**:
+- Product managers work directly with implementation, no traditional software engineers needed
+- The output is not code — it's understanding
+- Understand systems by building them, not by reading documentation
 
-**适用场景**：
-- 技术原型验证
-- 架构探索
-- 快速 MVP 开发
+**Use Cases**:
+- Technical prototype validation
+- Architecture exploration
+- Rapid MVP development
 
 ---
 
-## 我的实践案例
+## My Practice Cases
 
 ### Ontology OS
 
-**背景**：作为 AI PM 进入半导体行业，需要理解 Palantir AIP 的底层逻辑。
+**Background**: Entering the semiconductor industry as an AI PM, needing to understand the underlying logic of Palantir AIP.
 
-**做法**：
-- 一个人、一个模型（Claude）、两周迭代
-- 没有传统软件工程师参与
-- 没有 Sprint Planning，没有 Stand-up
+**Approach**:
+- One person, one model (Claude), two weeks of iteration
+- No traditional software engineers involved
+- No Sprint Planning, no Stand-ups
 
-**产出**：
-- 一个可运行的本体操作系统
-- 一套完整的架构认知框架
-- 一篇深度技术博客
+**Output**:
+- A working ontology operating system
+- A complete architectural understanding framework
+- A deep-dive technical blog post
 
-**关键洞察**：
-> "构建本体系统最难的部分不是代码，是心智模型。理解图数据库不是本体，本体不是 Schema，Schema 不是数据模型——这些是同心圆的抽象层级，搞对它们是产品问题，不是工程问题。"
+**Key Insight**:
+> "The hardest part of building an ontology system isn't the code — it's the mental model. Understanding that a graph database is not an ontology, an ontology is not a schema, and a schema is not a data model — these are concentric layers of abstraction, and getting them right is a product problem, not an engineering problem."
 
 ---
 
-## Vibe Coding 的关键技能
+## Key Skills for Vibe Coding
 
-### 1. 架构思维
+### 1. Architectural Thinking
 
-**核心能力**：
-- 定义系统边界
-- 指定层间契约
-- 推理数据流
+**Core Competencies**:
+- Defining system boundaries
+- Specifying inter-layer contracts
+- Reasoning about data flows
 
-**实践方法**：
-- 先画架构图，再写代码
-- 定义清晰的 API 接口
-- 明确数据流向和依赖关系
+**Practices**:
+- Draw the architecture diagram before writing code
+- Define clear API interfaces
+- Clarify data flow directions and dependencies
 
 ### 2. Prompt Engineering
 
-**核心能力**：
-- 把需求翻译成 AI 能理解的指令
-- 设计清晰的约束和验收标准
-- 处理边界情况和错误
+**Core Competencies**:
+- Translating requirements into instructions AI can understand
+- Designing clear constraints and acceptance criteria
+- Handling edge cases and errors
 
-**实践方法**：
-- 用结构化的方式描述需求
-- 提供具体的示例和反例
-- 明确技术约束和限制
+**Practices**:
+- Describe requirements in a structured way
+- Provide concrete examples and counter-examples
+- Specify technical constraints and limitations
 
-### 3. 质量判断
+### 3. Quality Judgment
 
-**核心能力**：
-- 判断 AI 产出的质量
-- 识别潜在的问题和风险
-- 决定是否需要人工干预
+**Core Competencies**:
+- Evaluating the quality of AI output
+- Identifying potential issues and risks
+- Deciding when human intervention is needed
 
-**实践方法**：
-- 建立质量检查清单
-- 测试关键功能和边界情况
-- 验证架构决策的合理性
+**Practices**:
+- Establish a quality checklist
+- Test key features and edge cases
+- Validate the soundness of architectural decisions
 
 ---
 
-## Vibe Coding 的工作流
+## Vibe Coding Workflow
 
-### 阶段 1：需求定义（10 min）
+### Phase 1: Requirements Definition (10 min)
 
 ```markdown
-## 产品意图
-[一段话描述产品定位]
+## Product Intent
+[One paragraph describing the product positioning]
 
-## 架构边界
-- 输入：[什么数据进来]
-- 处理：[怎么处理]
-- 输出：[什么结果出去]
+## Architectural Boundaries
+- Input: [What data comes in]
+- Processing: [How it's processed]
+- Output: [What results come out]
 
-## 设计约束
-- 技术栈：[React + Vite + Tailwind CSS]
-- 性能要求：[响应时间 < 100ms]
-- 安全要求：[需要登录验证]
+## Design Constraints
+- Tech Stack: [React + Vite + Tailwind CSS]
+- Performance Requirements: [Response time < 100ms]
+- Security Requirements: [Login authentication required]
 ```
 
-### 阶段 2：架构设计（20 min）
+### Phase 2: Architecture Design (20 min)
 
 ```markdown
-## 系统架构
+## System Architecture
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   前端      │ →   │   后端      │ →   │   数据库    │
-│  React      │     │  FastAPI    │     │  Neo4j      │
+│   Frontend  │ →   │   Backend   │ →   │  Database   │
+│   React     │     │   FastAPI   │     │   Neo4j     │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 
-## 数据流
-1. 用户输入 → 前端组件
-2. 前端组件 → API 调用
-3. API 调用 → 后端处理
-4. 后端处理 → 数据库查询
-5. 数据库查询 → 结果返回
+## Data Flow
+1. User Input → Frontend Component
+2. Frontend Component → API Call
+3. API Call → Backend Processing
+4. Backend Processing → Database Query
+5. Database Query → Return Result
 
-## API 契约
-- GET /api/data → 返回数据列表
-- POST /api/data → 创建新数据
-- PUT /api/data/:id → 更新数据
-- DELETE /api/data/:id → 删除数据
+## API Contract
+- GET /api/data → Returns data list
+- POST /api/data → Creates new data
+- PUT /api/data/:id → Updates data
+- DELETE /api/data/:id → Deletes data
 ```
 
-### 阶段 3：代码生成（30 min）
+### Phase 3: Code Generation (30 min)
 
 ```markdown
-## Prompt 模板
+## Prompt Template
 
-你是一个资深前端工程师，擅长用 React + Vite + Tailwind CSS 快速构建原型。
+You are a senior frontend engineer skilled at rapidly building prototypes with React + Vite + Tailwind CSS.
 
-基于以下架构设计，生成一个可运行的项目。
+Based on the architecture design below, generate a runnable project.
 
-要求：
-1. 使用 React 19 + Vite 8 + Tailwind CSS 4
-2. 所有组件都要是 functional component + hooks
-3. 样式全部用 Tailwind CSS
-4. 使用 Lucide React 图标
-5. 数据用 mock 数据
+Requirements:
+1. Use React 19 + Vite 8 + Tailwind CSS 4
+2. All components must be functional components with hooks
+3. All styling must use Tailwind CSS
+4. Use Lucide React icons
+5. Use mock data for data
 
-架构设计：
-[粘贴阶段 2 的架构设计]
+Architecture Design:
+[Paste the architecture design from Phase 2]
 ```
 
-### 阶段 4：迭代优化（按需）
+### Phase 4: Iterative Refinement (As Needed)
 
 ```markdown
-## 迭代 Prompt
+## Iteration Prompt
 
-基于当前代码，进行以下修改：
+Based on the current code, make the following changes:
 
-1. [修改点 1]：[具体描述]
-2. [修改点 2]：[具体描述]
+1. [Change 1]: [Specific description]
+2. [Change 2]: [Specific description]
 
-要求：
-- 保持现有架构不变
-- 只修改指定部分
-- 确保其他功能不受影响
+Requirements:
+- Keep the existing architecture unchanged
+- Only modify the specified parts
+- Ensure other features are not affected
 ```
 
 ---
 
-## Vibe Coding 的最佳实践
+## Vibe Coding Best Practices
 
-### 1. 先理解再构建
+### 1. Understand Before Building
 
-**错误做法**：
-- 直接让 AI 写代码
-- 不理解架构就开始改
-- 遇到问题就重新开始
+**Wrong Approach**:
+- Having AI write code directly
+- Making changes without understanding the architecture
+- Starting over when encountering problems
 
-**正确做法**：
-- 先理解业务需求
-- 先设计系统架构
-- 先定义接口契约
+**Right Approach**:
+- Understand the business requirements first
+- Design the system architecture first
+- Define the interface contracts first
 
-### 2. 定义清晰的边界
+### 2. Define Clear Boundaries
 
-**错误做法**：
-- 模糊的需求描述
-- 不明确的技术约束
-- 没有验收标准
+**Wrong Approach**:
+- Vague requirement descriptions
+- Unclear technical constraints
+- No acceptance criteria
 
-**正确做法**：
-- 结构化的需求文档
-- 明确的技术约束
-- 具体的验收标准
+**Right Approach**:
+- Structured requirement documents
+- Explicit technical constraints
+- Specific acceptance criteria
 
-### 3. 迭代而非重写
+### 3. Iterate, Don't Rewrite
 
-**错误做法**：
-- 遇到问题就重写
-- 不保留之前的代码
-- 每次都从零开始
+**Wrong Approach**:
+- Rewriting when encountering problems
+- Not preserving previous code
+- Starting from scratch every time
 
-**正确做法**：
-- 在现有基础上迭代
-- 保留有用的代码
-- 逐步优化和改进
+**Right Approach**:
+- Iterate on the existing foundation
+- Preserve useful code
+- Optimize and improve incrementally
 
-### 4. 验证而非信任
+### 4. Verify, Don't Trust
 
-**错误做法**：
-- 完全信任 AI 的输出
-- 不测试就使用
-- 不验证边界情况
+**Wrong Approach**:
+- Fully trusting AI output
+- Using without testing
+- Not verifying edge cases
 
-**正确做法**：
-- 测试关键功能
-- 验证边界情况
-- 检查错误处理
+**Right Approach**:
+- Test key features
+- Verify edge cases
+- Check error handling
 
 ---
 
-## Vibe Coding 的收获
+## What Vibe Coding Delivers
 
-### 认知层面
+### Cognitive Level
 
-**最有价值的认知**：
-> "构建本体系统最难的部分不是代码，是心智模型。"
+**Most Valuable Insight**:
+> "The hardest part of building an ontology system isn't the code — it's the mental model."
 
-**实践收获**：
-- 不是"学编程"，是"学架构思维"
-- 产出的不是代码，是认知框架
-- PM + LLM 可以交付全栈原型
+**Practical Takeaways**:
+- Not "learning to code" — "learning to think architecturally"
+- The output is not code — it's a cognitive framework
+- PM + LLM can deliver full-stack prototypes
 
-### 技能层面
+### Skill Level
 
-**掌握的技能**：
-- 系统架构设计
+**Skills Acquired**:
+- System architecture design
 - Prompt Engineering
-- 质量判断和验证
-- 快速迭代和优化
+- Quality judgment and validation
+- Rapid iteration and optimization
 
-**适用场景**：
-- 技术原型验证
-- 架构探索
-- 快速 MVP 开发
+**Applicable Scenarios**:
+- Technical prototype validation
+- Architecture exploration
+- Rapid MVP development
 
-### 效率层面
+### Efficiency Level
 
-**效率提升**：
-- 从需求到原型：2-4 周 → 1-2 小时
-- 迭代周期：2-3 天 → 10 分钟
-- 沟通成本：多次会议 → 一次对话
-
----
-
-## Vibe Coding 的注意事项
-
-### 适用场景
-
-✅ **适合**：
-- 原型验证
-- 内部演示
-- 快速迭代
-- 技术探索
-
-❌ **不适合**：
-- 生产环境代码
-- 复杂业务逻辑
-- 高性能要求
-- 企业级安全
-
-### 风险控制
-
-**风险**：
-- AI 生成的代码可能有 bug
-- 架构决策可能不合理
-- 性能可能不达标
-
-**控制方法**：
-- 测试关键功能
-- 验证架构决策
-- 评估性能指标
+**Efficiency Gains**:
+- From requirements to prototype: 2–4 weeks → 1–2 hours
+- Iteration cycle: 2–3 days → 10 minutes
+- Communication cost: Multiple meetings → One conversation
 
 ---
 
-## 总结
+## Vibe Coding Caveats
 
-**核心理念**：
-- PRD 不是文档，是给 AI 的指令集
-- 原型不是代码，是可交互的需求说明
-- 迭代不是开发，是对话式的调整
+### Applicable Scenarios
 
-**效率提升**：
-- 从需求到原型：2-4 周 → 1-2 小时
-- 迭代周期：2-3 天 → 10 分钟
-- 沟通成本：多次会议 → 一次对话
+✅ **Suitable For**:
+- Prototype validation
+- Internal demos
+- Rapid iteration
+- Technical exploration
 
-**工具链**：
-- 需求输入：Markdown
-- PRD 生成：AI（Claude/GPT）
-- 原型生成：Claude Code
-- 技术栈：React + Vite + Tailwind CSS
+❌ **Not Suitable For**:
+- Production-grade code
+- Complex business logic
+- High-performance requirements
+- Enterprise-grade security
+
+### Risk Control
+
+**Risks**:
+- AI-generated code may contain bugs
+- Architectural decisions may be suboptimal
+- Performance may fall short
+
+**Mitigation**:
+- Test key features
+- Validate architectural decisions
+- Assess performance metrics
 
 ---
 
-*最后更新：2026-05-18*
-*基于 Ontology OS 和 Fab Agent Space 项目实践*
+## Summary
+
+**Core Philosophy**:
+- A PRD is not a document — it's an instruction set for AI
+- A prototype is not code — it's an interactive requirements specification
+- Iteration is not development — it's conversational refinement
+
+**Efficiency Gains**:
+- From requirements to prototype: 2–4 weeks → 1–2 hours
+- Iteration cycle: 2–3 days → 10 minutes
+- Communication cost: Multiple meetings → One conversation
+
+**Toolchain**:
+- Requirements Input: Markdown
+- PRD Generation: AI (Claude/GPT)
+- Prototype Generation: Claude Code
+- Tech Stack: React + Vite + Tailwind CSS
+
+---
+
+*Last Updated: 2026-05-26*
+*Based on practice from the Ontology OS and Fab Agent Space projects*

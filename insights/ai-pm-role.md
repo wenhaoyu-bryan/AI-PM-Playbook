@@ -1,395 +1,395 @@
-# AI PM 的角色认知
+# The AI PM Role
 
 **English** | **[中文](insights/ai-pm-role.zh-CN.md)**
 
 
-> 从"写文档"到"写指令"
-> 从"管理开发"到"驾驭 AI"
-> 从"线性流程"到"快速迭代"
+> From "writing documents" to "writing instructions"
+> From "managing development" to "harnessing AI"
+> From "linear processes" to "rapid iteration"
 
 ---
 
-## 传统 PM vs AI PM
+## Traditional PM vs AI PM
 
-### 传统 PM
+### Traditional PM
 
-**核心职责**：
-- 需求分析和文档编写
-- 项目管理和进度跟踪
-- 跨部门沟通和协调
-- 产品上线和运营
+**Core Responsibilities**:
+- Requirements analysis and document writing
+- Project management and progress tracking
+- Cross-department communication and coordination
+- Product launch and operations
 
-**工作流程**：
+**Workflow**:
 ```
-需求 → PRD → 设计 → 开发 → 测试 → 上线
+Requirements → PRD → Design → Development → Testing → Launch
 ```
 
-**核心技能**：
-- 需求分析
-- 文档编写
-- 项目管理
-- 沟通协调
+**Core Skills**:
+- Requirements analysis
+- Document writing
+- Project management
+- Communication and coordination
 
-**工具链**：
-- 文档：Word、Excel、PPT
-- 设计：Figma、Sketch
-- 项目管理：Jira、Trello
-- 沟通：邮件、会议
+**Toolchain**:
+- Documentation: Word, Excel, PPT
+- Design: Figma, Sketch
+- Project management: Jira, Trello
+- Communication: Email, meetings
 
 ---
 
 ### AI PM
 
-**核心职责**：
-- 需求分析和 AI 指令设计
-- 架构设计和技术选型
-- 质量判断和验证
-- 快速迭代和优化
+**Core Responsibilities**:
+- Requirements analysis and AI instruction design
+- Architecture design and technology selection
+- Quality assessment and verification
+- Rapid iteration and optimization
 
-**工作流程**：
+**Workflow**:
 ```
-需求 → AI 指令 → AI 生成 → 验证 → 迭代
+Requirements → AI Instructions → AI Generation → Verification → Iteration
 ```
 
-**核心技能**：
+**Core Skills**:
 - Prompt Engineering
 - Architecture Design
 - Quality Assurance
 - Iteration Management
 
-**工具链**：
-- AI 工具：Claude Code、Cursor
-- 设计：Figma（可选）
-- 项目管理：GitHub Issues
-- 沟通：Slack、飞书
+**Toolchain**:
+- AI tools: Claude Code, Cursor
+- Design: Figma (optional)
+- Project management: GitHub Issues
+- Communication: Slack, Feishu
 
 ---
 
-## AI PM 的核心能力
+## Core Competencies of an AI PM
 
-### 1. 架构思维
+### 1. Architectural Thinking
 
-**定义**：理解系统如何工作，定义组件边界和数据流。
+**Definition**: Understanding how systems work, defining component boundaries and data flows.
 
-**关键能力**：
-- 定义系统边界
-- 设计组件接口
-- 推理数据流
-- 评估技术选型
+**Key Abilities**:
+- Define system boundaries
+- Design component interfaces
+- Reason about data flows
+- Evaluate technology choices
 
-**实践方法**：
-- 先画架构图，再写代码
-- 定义清晰的 API 接口
-- 明确数据流向和依赖关系
+**Practice Methods**:
+- Draw architecture diagrams before writing code
+- Define clear API interfaces
+- Clarify data flows and dependencies
 
-**案例**：
-- Ontology OS：Neo4j 是数据源，NetworkX 是计算引擎，LLM 是推理层
-- Fab Agent Space：React 前端 + Mock 数据 + 组件化设计
+**Examples**:
+- Ontology OS: Neo4j as data source, NetworkX as computation engine, LLM as reasoning layer
+- Fab Agent Space: React frontend + mock data + component-based design
 
 ---
 
 ### 2. Prompt Engineering
 
-**定义**：设计给 AI 的指令，让 AI 理解你的意图并产出高质量结果。
+**Definition**: Designing instructions for AI so that it understands your intent and produces high-quality results.
 
-**关键能力**：
-- 把需求翻译成 AI 能理解的指令
-- 设计清晰的约束和验收标准
-- 处理边界情况和错误
+**Key Abilities**:
+- Translate requirements into instructions AI can understand
+- Design clear constraints and acceptance criteria
+- Handle edge cases and errors
 
-**实践方法**：
-- 用结构化的方式描述需求
-- 提供具体的示例和反例
-- 明确技术约束和限制
+**Practice Methods**:
+- Describe requirements in a structured way
+- Provide concrete examples and counterexamples
+- Specify technical constraints and limitations
 
-**Prompt 设计原则**：
-1. **清晰**：用简洁的语言描述需求
-2. **具体**：提供具体的示例和约束
-3. **完整**：覆盖所有边界情况
-4. **可验证**：定义明确的验收标准
-
----
-
-### 3. 质量判断
-
-**定义**：判断 AI 产出的质量，识别潜在的问题和风险。
-
-**关键能力**：
-- 识别代码质量问题
-- 发现架构设计缺陷
-- 评估性能和安全风险
-- 决定是否需要人工干预
-
-**实践方法**：
-- 建立质量检查清单
-- 测试关键功能和边界情况
-- 验证架构决策的合理性
-
-**质量检查维度**：
-- 功能正确性
-- 边界处理
-- 性能表现
-- 安全性
+**Prompt Design Principles**:
+1. **Clear**: Use concise language to describe requirements
+2. **Specific**: Provide concrete examples and constraints
+3. **Complete**: Cover all edge cases
+4. **Verifiable**: Define clear acceptance criteria
 
 ---
 
-### 4. 快速验证
+### 3. Quality Assessment
 
-**定义**：快速验证需求和假设，用最小成本验证想法。
+**Definition**: Evaluating the quality of AI output, identifying potential issues and risks.
 
-**关键能力**：
-- 设计最小可行产品（MVP）
-- 快速生成原型
-- 收集用户反馈
-- 迭代优化
+**Key Abilities**:
+- Identify code quality issues
+- Detect architecture design flaws
+- Assess performance and security risks
+- Decide when human intervention is needed
 
-**实践方法**：
-- 用 AI 快速生成原型
-- 让用户试用并反馈
-- 基于反馈快速迭代
-- 验证核心假设
+**Practice Methods**:
+- Establish quality checklists
+- Test critical functionality and edge cases
+- Verify the validity of architectural decisions
 
-**验证清单**：
-- [ ] 核心功能是否解决用户问题
-- [ ] 交互流程是否顺畅
-- [ ] 用户是否愿意使用
-- [ ] 是否有商业价值
-
----
-
-## AI PM 的工作流
-
-### 阶段 1：需求分析（10 min）
-
-**输入**：模糊的需求描述
-
-**输出**：结构化的需求文档
-
-**关键活动**：
-- 理解业务背景
-- 明确目标用户
-- 定义核心问题
-- 确定优先级
-
-**工具**：Markdown
+**Quality Check Dimensions**:
+- Functional correctness
+- Edge case handling
+- Performance
+- Security
 
 ---
 
-### 阶段 2：架构设计（20 min）
+### 4. Rapid Validation
 
-**输入**：结构化的需求文档
+**Definition**: Quickly validating requirements and hypotheses, verifying ideas at minimal cost.
 
-**输出**：系统架构和 API 设计
+**Key Abilities**:
+- Design minimum viable products (MVPs)
+- Rapidly generate prototypes
+- Collect user feedback
+- Iterate and optimize
 
-**关键活动**：
-- 设计系统架构
-- 定义组件边界
-- 设计 API 接口
-- 选择技术栈
+**Practice Methods**:
+- Use AI to rapidly generate prototypes
+- Have users try and provide feedback
+- Iterate quickly based on feedback
+- Validate core assumptions
 
-**工具**：Markdown、Excalidraw
-
----
-
-### 阶段 3：AI 生成（30 min）
-
-**输入**：系统架构和 API 设计
-
-**输出**：可运行的原型
-
-**关键活动**：
-- 编写 AI 指令（Prompt）
-- 生成代码
-- 验证功能
-- 修复问题
-
-**工具**：Claude Code、Cursor
+**Validation Checklist**:
+- [ ] Does the core functionality solve the user's problem?
+- [ ] Is the interaction flow smooth?
+- [ ] Are users willing to use it?
+- [ ] Is there business value?
 
 ---
 
-### 阶段 4：验证迭代（按需）
+## AI PM Workflow
 
-**输入**：用户反馈
+### Phase 1: Requirements Analysis (10 min)
 
-**输出**：优化后的版本
+**Input**: Vague requirements description
 
-**关键活动**：
-- 收集用户反馈
-- 分析问题
-- 优化 Prompt
-- 重新生成
+**Output**: Structured requirements document
 
-**工具**：Claude Code、Cursor
+**Key Activities**:
+- Understand the business context
+- Identify target users
+- Define the core problem
+- Determine priorities
 
----
-
-## AI PM 的挑战
-
-### 1. 技术理解
-
-**挑战**：需要理解技术架构和实现细节
-
-**应对方法**：
-- 学习基础的技术知识
-- 与工程师沟通交流
-- 通过实践加深理解
-
-**案例**：
-- Ontology OS：通过逆向工程 Palantir AIP 理解本体系统
-- Fab Agent Space：通过构建原型理解 React 架构
+**Tools**: Markdown
 
 ---
 
-### 2. 质量把控
+### Phase 2: Architecture Design (20 min)
 
-**挑战**：AI 生成的代码质量不稳定
+**Input**: Structured requirements document
 
-**应对方法**：
-- 建立质量检查清单
-- 测试关键功能和边界情况
-- 验证架构决策的合理性
+**Output**: System architecture and API design
 
-**质量检查维度**：
-- 功能正确性
-- 边界处理
-- 性能表现
-- 安全性
+**Key Activities**:
+- Design system architecture
+- Define component boundaries
+- Design API interfaces
+- Select technology stack
 
----
-
-### 3. 沟通协作
-
-**挑战**：需要与工程师、设计师、用户等多方沟通
-
-**应对方法**：
-- 用原型代替文档
-- 用演示代替会议
-- 用数据说话
-
-**沟通技巧**：
-- 用原型展示想法
-- 用数据支持决策
-- 用反馈验证假设
+**Tools**: Markdown, Excalidraw
 
 ---
 
-## AI PM 的成长路径
+### Phase 3: AI Generation (30 min)
 
-### 阶段 1：学习基础（0-3 个月）
+**Input**: System architecture and API design
 
-**目标**：掌握 AI 工具和基础技能
+**Output**: Working prototype
 
-**学习内容**：
-- Prompt Engineering 基础
+**Key Activities**:
+- Write AI instructions (Prompts)
+- Generate code
+- Verify functionality
+- Fix issues
+
+**Tools**: Claude Code, Cursor
+
+---
+
+### Phase 4: Validation & Iteration (as needed)
+
+**Input**: User feedback
+
+**Output**: Optimized version
+
+**Key Activities**:
+- Collect user feedback
+- Analyze issues
+- Optimize prompts
+- Regenerate
+
+**Tools**: Claude Code, Cursor
+
+---
+
+## Challenges for AI PMs
+
+### 1. Technical Understanding
+
+**Challenge**: Need to understand technical architecture and implementation details
+
+**Approach**:
+- Learn foundational technical knowledge
+- Communicate and collaborate with engineers
+- Deepen understanding through practice
+
+**Examples**:
+- Ontology OS: Understanding ontology systems by reverse-engineering Palantir AIP
+- Fab Agent Space: Understanding React architecture by building prototypes
+
+---
+
+### 2. Quality Control
+
+**Challenge**: AI-generated code quality is inconsistent
+
+**Approach**:
+- Establish quality checklists
+- Test critical functionality and edge cases
+- Verify the validity of architectural decisions
+
+**Quality Check Dimensions**:
+- Functional correctness
+- Edge case handling
+- Performance
+- Security
+
+---
+
+### 3. Communication & Collaboration
+
+**Challenge**: Need to communicate with engineers, designers, users, and other stakeholders
+
+**Approach**:
+- Use prototypes instead of documents
+- Use demos instead of meetings
+- Let data speak
+
+**Communication Tips**:
+- Use prototypes to showcase ideas
+- Use data to support decisions
+- Use feedback to validate assumptions
+
+---
+
+## AI PM Growth Path
+
+### Phase 1: Learning the Basics (0-3 months)
+
+**Goal**: Master AI tools and foundational skills
+
+**Learning Content**:
+- Prompt Engineering fundamentals
 - React + Vite + Tailwind CSS
-- 版本控制（Git）
-- 基础的架构设计
+- Version control (Git)
+- Basic architecture design
 
-**实践项目**：
-- 简单的 CRUD 应用
-- 静态网站
-- 数据可视化
-
----
-
-### 阶段 2：实践应用（3-6 个月）
-
-**目标**：在实际项目中应用 AI 工具
-
-**学习内容**：
-- 复杂的架构设计
-- 性能优化
-- 用户体验设计
-- 产品思维
-
-**实践项目**：
-- 内部工具
-- MVP 产品
-- 技术验证
+**Practice Projects**:
+- Simple CRUD applications
+- Static websites
+- Data visualization
 
 ---
 
-### 阶段 3：深度实践（6-12 个月）
+### Phase 2: Practical Application (3-6 months)
 
-**目标**：成为 AI PM 专家
+**Goal**: Apply AI tools in real projects
 
-**学习内容**：
-- 本体论思维
-- 系统架构设计
-- 产品战略
-- 团队管理
+**Learning Content**:
+- Complex architecture design
+- Performance optimization
+- User experience design
+- Product thinking
 
-**实践项目**：
-- 核心产品
-- 技术平台
-- 团队建设
+**Practice Projects**:
+- Internal tools
+- MVP products
+- Technical validation
 
 ---
 
-## AI PM 的价值
+### Phase 3: Deep Practice (6-12 months)
 
-### 对个人
+**Goal**: Become an AI PM expert
 
-**能力提升**：
-- 架构思维
+**Learning Content**:
+- Ontological thinking
+- System architecture design
+- Product strategy
+- Team management
+
+**Practice Projects**:
+- Core products
+- Technical platforms
+- Team building
+
+---
+
+## The Value of AI PMs
+
+### For Individuals
+
+**Skill Development**:
+- Architectural thinking
 - Prompt Engineering
-- 质量判断
-- 快速验证
+- Quality assessment
+- Rapid validation
 
-**职业发展**：
-- 更广阔的职业选择
-- 更高的薪资水平
-- 更强的竞争力
-
----
-
-### 对团队
-
-**效率提升**：
-- 从需求到原型：2-4 周 → 1-2 小时
-- 迭代周期：2-3 天 → 10 分钟
-- 沟通成本：多次会议 → 一次对话
-
-**质量提升**：
-- 更快的验证速度
-- 更多的迭代次数
-- 更好的用户体验
+**Career Growth**:
+- Broader career options
+- Higher salary levels
+- Stronger competitiveness
 
 ---
 
-### 对公司
+### For Teams
 
-**商业价值**：
-- 更快的产品上市时间
-- 更低的开发成本
-- 更高的产品成功率
+**Efficiency Gains**:
+- Requirements to prototype: 2-4 weeks → 1-2 hours
+- Iteration cycle: 2-3 days → 10 minutes
+- Communication overhead: Multiple meetings → One conversation
 
-**竞争优势**：
-- 更快的响应市场变化
-- 更强的创新能力
-- 更好的用户体验
+**Quality Improvements**:
+- Faster validation speed
+- More iteration cycles
+- Better user experience
 
 ---
 
-## 总结
+### For Companies
 
-**核心变化**：
-- 从"写文档"到"写指令"
-- 从"管理开发"到"驾驭 AI"
-- 从"线性流程"到"快速迭代"
+**Business Value**:
+- Faster time to market
+- Lower development costs
+- Higher product success rate
 
-**核心能力**：
-- 架构思维
+**Competitive Advantage**:
+- Faster response to market changes
+- Stronger innovation capability
+- Better user experience
+
+---
+
+## Summary
+
+**Core Shifts**:
+- From "writing documents" to "writing instructions"
+- From "managing development" to "harnessing AI"
+- From "linear processes" to "rapid iteration"
+
+**Core Competencies**:
+- Architectural thinking
 - Prompt Engineering
-- 质量判断
-- 快速验证
+- Quality assessment
+- Rapid validation
 
-**核心价值**：
-- 效率提升 15-20x
-- 质量提升
-- 成本降低
+**Core Value**:
+- 15-20x efficiency improvement
+- Quality improvement
+- Cost reduction
 
 ---
 
-*最后更新：2026-05-18*
-*基于 TCL 格创东智的工作实践*
+*Last Updated: 2026-05-26*
+*Based on work practices at TCL CGC Dongzhi*

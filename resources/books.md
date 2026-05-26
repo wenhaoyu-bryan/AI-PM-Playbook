@@ -1,284 +1,284 @@
-# 推荐书籍
+# Recommended Books
 
 **English** | **[中文](resources/books.zh-CN.md)**
 
 
-> AI PM 的必读书籍
-> 从产品思维到技术架构，从系统思维到用户体验
+> Must-read books for AI PMs
+> From product thinking to technical architecture, from systems thinking to user experience
 
 ---
 
-## 产品思维
+## Product Thinking
 
-### 1. 《Inspired》 - Marty Cagan
+### 1. "Inspired" - Marty Cagan
 
-**推荐理由**：
-- 产品管理的圣经
-- 理解产品开发的本质
-- 学习如何发现和验证产品机会
+**Why We Recommend It**:
+- The bible of product management
+- Understand the essence of product development
+- Learn how to discover and validate product opportunities
 
-**核心内容**：
-- 产品发现 vs 产品交付
-- 产品团队的角色和职责
-- 如何做用户调研和验证
-- 如何定义产品策略
+**Core Content**:
+- Product discovery vs product delivery
+- Roles and responsibilities of product teams
+- How to conduct user research and validation
+- How to define product strategy
 
-**适合谁**：
-- 想成为产品经理的人
-- 想提升产品思维的人
-- 想理解产品开发流程的人
+**Who It's For**:
+- Anyone who wants to become a product manager
+- Anyone who wants to improve their product thinking
+- Anyone who wants to understand the product development process
 
-**关键收获**：
-- 产品不是功能的堆砌，是解决方案
-- 产品经理的核心是发现和验证机会
-- 用户调研是产品成功的关键
-
----
-
-### 2. 《The Mom Test》 - Rob Fitzpatrick
-
-**推荐理由**：
-- 用户调研的实战指南
-- 学习如何问对问题
-- 避免常见的调研陷阱
-
-**核心内容**：
-- 如何问对问题
-- 如何避免引导性问题
-- 如何识别用户的真实需求
-- 如何验证产品假设
-
-**适合谁**：
-- 想做用户调研的人
-- 想验证产品假设的人
-- 想避免常见调研错误的人
-
-**关键收获**：
-- 不要问用户"你会用吗"
-- 要问用户"你上次遇到这个问题是什么时候"
-- 用户的行为比言语更真实
+**Key Takeaways**:
+- Products are not a pile of features — they are solutions
+- The core of a product manager's role is discovering and validating opportunities
+- User research is key to product success
 
 ---
 
-## 系统思维
+### 2. "The Mom Test" - Rob Fitzpatrick
 
-### 3. 《Thinking in Systems》 - Donella H. Meadows
+**Why We Recommend It**:
+- A practical guide to user research
+- Learn how to ask the right questions
+- Avoid common research pitfalls
 
-**推荐理由**：
-- 系统思维的入门经典
-- 理解复杂系统的运作方式
-- 学习如何分析和设计系统
+**Core Content**:
+- How to ask the right questions
+- How to avoid leading questions
+- How to identify users' real needs
+- How to validate product hypotheses
 
-**核心内容**：
-- 什么是系统
-- 系统的组成要素
-- 系统的行为模式
-- 如何干预系统
+**Who It's For**:
+- Anyone who wants to conduct user research
+- Anyone who wants to validate product hypotheses
+- Anyone who wants to avoid common research mistakes
 
-**适合谁**：
-- 想理解复杂系统的人
-- 想提升系统思维的人
-- 想设计更好系统的人
-
-**关键收获**：
-- 系统由要素、连接、功能组成
-- 系统的行为由反馈回路驱动
-- 干预系统要找到杠杆点
+**Key Takeaways**:
+- Don't ask users "Would you use this?"
+- Ask users "When was the last time you encountered this problem?"
+- Users' actions are more truthful than their words
 
 ---
 
-## 用户体验
+## Systems Thinking
 
-### 4. 《The Design of Everyday Things》 - Don Norman
+### 3. "Thinking in Systems" - Donella H. Meadows
 
-**推荐理由**：
-- 用户体验设计的圣经
-- 理解设计的本质
-- 学习如何设计好用的产品
+**Why We Recommend It**:
+- A classic introduction to systems thinking
+- Understand how complex systems operate
+- Learn how to analyze and design systems
 
-**核心内容**：
-- 可供性（Affordance）
-- 意符（Signifier）
-- 反馈（Feedback）
-- 概念模型（Conceptual Model）
+**Core Content**:
+- What is a system
+- Components of a system
+- Behavioral patterns of systems
+- How to intervene in a system
 
-**适合谁**：
-- 想提升产品设计能力的人
-- 想理解用户体验的人
-- 想设计好用产品的人
+**Who It's For**:
+- Anyone who wants to understand complex systems
+- Anyone who wants to improve their systems thinking
+- Anyone who wants to design better systems
 
-**关键收获**：
-- 设计不是美化，是解决问题
-- 好的设计是自然的、直觉的
-- 用户体验是产品成功的关键
-
----
-
-## 技术架构
-
-### 5. 《Designing Data-Intensive Applications》 - Martin Kleppmann
-
-**推荐理由**：
-- 数据密集型应用的设计指南
-- 理解分布式系统的原理
-- 学习如何设计可扩展的系统
-
-**核心内容**：
-- 数据模型和查询语言
-- 存储引擎和数据结构
-- 复制和分区
-- 事务和一致性
-
-**适合谁**：
-- 想理解技术架构的人
-- 想设计可扩展系统的人
-- 想与工程师有效沟通的人
-
-**关键收获**：
-- 理解不同数据模型的优缺点
-- 理解分布式系统的挑战
-- 学习如何做出技术权衡
+**Key Takeaways**:
+- Systems are composed of elements, connections, and functions
+- System behavior is driven by feedback loops
+- Intervening in a system requires finding leverage points
 
 ---
 
-## AI 和机器学习
+## User Experience
 
-### 6. 《AI产品经理的实操手册》 - 王喆
+### 4. "The Design of Everyday Things" - Don Norman
 
-**推荐理由**：
-- AI 产品经理的实战指南
-- 理解 AI 产品的特点
-- 学习如何做 AI 产品
+**Why We Recommend It**:
+- The bible of user experience design
+- Understand the essence of design
+- Learn how to design usable products
 
-**核心内容**：
-- AI 产品的特点
-- AI 产品的开发流程
-- AI 产品的评估指标
-- AI 产品的落地案例
+**Core Content**:
+- Affordance
+- Signifier
+- Feedback
+- Conceptual Model
 
-**适合谁**：
-- 想成为 AI PM 的人
-- 想理解 AI 产品的人
-- 想做 AI 产品的人
+**Who It's For**:
+- Anyone who wants to improve their product design skills
+- Anyone who wants to understand user experience
+- Anyone who wants to design usable products
 
-**关键收获**：
-- AI 产品有其特殊性
-- AI 产品需要更多验证
-- AI 产品需要持续迭代
-
----
-
-## 商业思维
-
-### 7. 《商业模式新生代》 - Alexander Osterwalder
-
-**推荐理由**：
-- 商业模式设计的实用工具
-- 学习如何设计商业模式
-- 理解商业的本质
-
-**核心内容**：
-- 商业模式画布
-- 价值主张设计
-- 客户细分
-- 收入来源
-
-**适合谁**：
-- 想设计商业模式的人
-- 想理解商业本质的人
-- 想创业的人
-
-**关键收获**：
-- 商业模式是价值创造和获取的方式
-- 价值主张是商业模式的核心
-- 客户细分是商业模式的基础
+**Key Takeaways**:
+- Design is not about beautification — it's about solving problems
+- Good design is natural and intuitive
+- User experience is key to product success
 
 ---
 
-## 创新思维
+## Technical Architecture
 
-### 8. 《创新者的窘境》 - Clayton Christensen
+### 5. "Designing Data-Intensive Applications" - Martin Kleppmann
 
-**推荐理由**：
-- 理解颠覆式创新
-- 学习如何应对创新挑战
-- 理解行业变革的规律
+**Why We Recommend It**:
+- A design guide for data-intensive applications
+- Understand the principles of distributed systems
+- Learn how to design scalable systems
 
-**核心内容**：
-- 颠覆式创新 vs 持续性创新
-- 价值网络
-- 资源-流程-价值观框架
-- 如何应对颠覆
+**Core Content**:
+- Data models and query languages
+- Storage engines and data structures
+- Replication and partitioning
+- Transactions and consistency
 
-**适合谁**：
-- 想理解创新的人
-- 想应对行业变革的人
-- 想做颠覆式创新的人
+**Who It's For**:
+- Anyone who wants to understand technical architecture
+- Anyone who wants to design scalable systems
+- Anyone who wants to communicate effectively with engineers
 
-**关键收获**：
-- 颠覆式创新来自边缘市场
-- 大公司往往被颠覆式创新击败
-- 应对颠覆需要独立的小团队
-
----
-
-## 阅读建议
-
-### 入门路径
-
-**阶段 1：产品基础（0-3 个月）**
-1. 《Inspired》 - 产品管理入门
-2. 《The Mom Test》 - 用户调研入门
-3. 《The Design of Everyday Things》 - 用户体验入门
-
-**阶段 2：系统思维（3-6 个月）**
-4. 《Thinking in Systems》 - 系统思维入门
-5. 《Designing Data-Intensive Applications》 - 技术架构入门
-
-**阶段 3：AI 产品（6-12 个月）**
-6. 《AI产品经理的实操手册》 - AI 产品入门
-7. 《创新者的窘境》 - 创新思维入门
-
-**阶段 4：商业思维（12+ 个月）**
-8. 《商业模式新生代》 - 商业模式入门
+**Key Takeaways**:
+- Understand the trade-offs of different data models
+- Understand the challenges of distributed systems
+- Learn how to make technical trade-offs
 
 ---
 
-### 阅读方法
+## AI and Machine Learning
 
-**1. 带着问题读**
-- 读之前先想清楚想解决什么问题
-- 读的时候带着问题找答案
-- 读完后总结关键收获
+### 6. "AI产品经理的实操手册" - Wang Zhe
 
-**2. 做笔记**
-- 记录关键概念和框架
-- 记录自己的思考和感悟
-- 记录可以应用的地方
+**Why We Recommend It**:
+- A practical guide for AI product managers
+- Understand the characteristics of AI products
+- Learn how to build AI products
 
-**3. 实践应用**
-- 读完后尝试应用到工作中
-- 用实践验证理论
-- 用理论指导实践
+**Core Content**:
+- Characteristics of AI products
+- AI product development process
+- AI product evaluation metrics
+- AI product implementation case studies
 
----
+**Who It's For**:
+- Anyone who wants to become an AI PM
+- Anyone who wants to understand AI products
+- Anyone who wants to build AI products
 
-## 总结
-
-**核心书籍**：
-- 产品思维：《Inspired》、《The Mom Test》
-- 系统思维：《Thinking in Systems》
-- 用户体验：《The Design of Everyday Things》
-- 技术架构：《Designing Data-Intensive Applications》
-- AI 产品：《AI产品经理的实操手册》
-
-**阅读建议**：
-- 从产品基础开始
-- 带着问题读
-- 做笔记
-- 实践应用
+**Key Takeaways**:
+- AI products have their own unique characteristics
+- AI products require more validation
+- AI products require continuous iteration
 
 ---
 
-*最后更新：2026-05-18*
-*基于个人阅读和实践经验*
+## Business Thinking
+
+### 7. "Business Model Generation" - Alexander Osterwalder
+
+**Why We Recommend It**:
+- A practical tool for business model design
+- Learn how to design business models
+- Understand the essence of business
+
+**Core Content**:
+- Business Model Canvas
+- Value Proposition Design
+- Customer Segments
+- Revenue Streams
+
+**Who It's For**:
+- Anyone who wants to design business models
+- Anyone who wants to understand the essence of business
+- Anyone who wants to start a business
+
+**Key Takeaways**:
+- A business model is how you create and capture value
+- The value proposition is the core of a business model
+- Customer segmentation is the foundation of a business model
+
+---
+
+## Innovation Thinking
+
+### 8. "The Innovator's Dilemma" - Clayton Christensen
+
+**Why We Recommend It**:
+- Understand disruptive innovation
+- Learn how to deal with innovation challenges
+- Understand the patterns of industry transformation
+
+**Core Content**:
+- Disruptive innovation vs sustaining innovation
+- Value networks
+- Resources-Processes-Values framework
+- How to respond to disruption
+
+**Who It's For**:
+- Anyone who wants to understand innovation
+- Anyone who wants to deal with industry transformation
+- Anyone who wants to pursue disruptive innovation
+
+**Key Takeaways**:
+- Disruptive innovation comes from edge markets
+- Large companies are often defeated by disruptive innovation
+- Responding to disruption requires independent small teams
+
+---
+
+## Reading Recommendations
+
+### Beginner Path
+
+**Phase 1: Product Foundations (0–3 months)**
+1. "Inspired" — Product management introduction
+2. "The Mom Test" — User research introduction
+3. "The Design of Everyday Things" — User experience introduction
+
+**Phase 2: Systems Thinking (3–6 months)**
+4. "Thinking in Systems" — Systems thinking introduction
+5. "Designing Data-Intensive Applications" — Technical architecture introduction
+
+**Phase 3: AI Products (6–12 months)**
+6. "AI产品经理的实操手册" — AI product introduction
+7. "The Innovator's Dilemma" — Innovation thinking introduction
+
+**Phase 4: Business Thinking (12+ months)**
+8. "Business Model Generation" — Business model introduction
+
+---
+
+### Reading Methods
+
+**1. Read with Questions in Mind**
+- Before reading, clarify what problem you want to solve
+- While reading, seek answers to your questions
+- After reading, summarize key takeaways
+
+**2. Take Notes**
+- Record key concepts and frameworks
+- Record your own thoughts and reflections
+- Record areas where you can apply the knowledge
+
+**3. Apply in Practice**
+- After reading, try applying insights to your work
+- Use practice to validate theory
+- Use theory to guide practice
+
+---
+
+## Summary
+
+**Core Books**:
+- Product Thinking: "Inspired", "The Mom Test"
+- Systems Thinking: "Thinking in Systems"
+- User Experience: "The Design of Everyday Things"
+- Technical Architecture: "Designing Data-Intensive Applications"
+- AI Products: "AI产品经理的实操手册"
+
+**Reading Recommendations**:
+- Start with product foundations
+- Read with questions in mind
+- Take notes
+- Apply in practice
+
+---
+
+*Last Updated: 2026-05-26*
+*Based on personal reading and practical experience*

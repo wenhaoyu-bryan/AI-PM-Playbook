@@ -1,383 +1,383 @@
-# Harness Engineering 入门
+# Harness Engineering Primer
 
 **English** | **[中文](workflows/harness-engineering.zh-CN.md)**
 
 
-> 不是写代码，是驾驭 AI 写代码
-> 核心技能：Prompt Engineering + Architecture Design + Quality Assurance
+> Not writing code — harnessing AI to write code
+> Core Skills: Prompt Engineering + Architecture Design + Quality Assurance
 
 ---
 
-## 什么是 Harness Engineering？
+## What is Harness Engineering?
 
-**定义**：驾驭 AI 工具（如 Claude Code、Cursor）进行软件开发的工程实践。
+**Definition**: The engineering practice of harnessing AI tools (such as Claude Code, Cursor) for software development.
 
-**核心理念**：
-- 不是"写代码"，是"驾驭 AI 写代码"
-- 不是"学编程"，是"学架构思维"
-- 不是"管理开发"，是"管理 AI 开发"
+**Core Philosophy**:
+- Not "writing code" — "harnessing AI to write code"
+- Not "learning to code" — "learning to think architecturally"
+- Not "managing development" — "managing AI development"
 
-**与传统开发的区别**：
+**How It Differs from Traditional Development**:
 
-| 维度 | 传统开发 | Harness Engineering |
-|------|----------|---------------------|
-| 核心技能 | 编程语言 | Prompt Engineering |
-| 工作方式 | 写代码 | 驾驭 AI 写代码 |
-| 知识重点 | 语法细节 | 架构设计 |
-| 质量保证 | 单元测试 | 验收标准 |
-| 迭代方式 | 改代码 | 改指令 |
+| Dimension | Traditional Development | Harness Engineering |
+|-----------|------------------------|---------------------|
+| Core Skill | Programming Languages | Prompt Engineering |
+| Working Style | Writing Code | Harnessing AI to Write Code |
+| Knowledge Focus | Syntax Details | Architecture Design |
+| Quality Assurance | Unit Tests | Acceptance Criteria |
+| Iteration Style | Modify Code | Modify Instructions |
 
 ---
 
-## 核心技能
+## Core Skills
 
 ### 1. Prompt Engineering
 
-**定义**：设计给 AI 的指令，让 AI 理解你的意图并产出高质量代码。
+**Definition**: Designing instructions for AI so that it understands your intent and produces high-quality code.
 
-**关键要素**：
-- **清晰的需求描述**：用结构化的方式描述需求
-- **明确的技术约束**：指定技术栈、性能要求、安全限制
-- **具体的验收标准**：定义什么是"完成"和"正确"
-- **边界情况处理**：考虑异常情况和错误处理
+**Key Elements**:
+- **Clear Requirement Descriptions**: Describe requirements in a structured way
+- **Explicit Technical Constraints**: Specify tech stack, performance requirements, security restrictions
+- **Specific Acceptance Criteria**: Define what "done" and "correct" mean
+- **Edge Case Handling**: Account for anomalies and error handling
 
-**Prompt 模板**：
+**Prompt Template**:
 
 ```markdown
-你是一个资深[角色]，擅长[技能]。
+You are a senior [role], skilled at [skill].
 
-基于以下[输入]，生成[输出]。
+Based on the following [input], generate [output].
 
-要求：
-1. [要求 1]
-2. [要求 2]
-3. [要求 3]
+Requirements:
+1. [Requirement 1]
+2. [Requirement 2]
+3. [Requirement 3]
 
-约束：
-- [约束 1]
-- [约束 2]
+Constraints:
+- [Constraint 1]
+- [Constraint 2]
 
-验收标准：
-- [标准 1]
-- [标准 2]
+Acceptance Criteria:
+- [Criterion 1]
+- [Criterion 2]
 
-输入：
-[粘贴输入内容]
+Input:
+[Paste input content]
 ```
 
-**示例**：
+**Example**:
 
 ```markdown
-你是一个资深前端工程师，擅长用 React + Vite + Tailwind CSS 快速构建原型。
+You are a senior frontend engineer skilled at rapidly building prototypes with React + Vite + Tailwind CSS.
 
-基于以下 PRD，生成一个可运行的原型项目。
+Based on the following PRD, generate a runnable prototype project.
 
-要求：
-1. 使用 React 19 + Vite 8 + Tailwind CSS 4
-2. 所有组件都要是 functional component + hooks
-3. 样式全部用 Tailwind CSS，不要写自定义 CSS
-4. 使用 Lucide React 图标
-5. 数据用 mock 数据，不要调用真实 API
+Requirements:
+1. Use React 19 + Vite 8 + Tailwind CSS 4
+2. All components must be functional components with hooks
+3. All styling must use Tailwind CSS — no custom CSS
+4. Use Lucide React icons
+5. Use mock data — do not call real APIs
 
-约束：
-- 端口固定 5175
-- 部署到 GitHub Pages（base: './'）
-- 响应式设计（支持桌面端）
+Constraints:
+- Fixed port 5175
+- Deploy to GitHub Pages (base: './')
+- Responsive design (desktop support)
 
-验收标准：
-- 所有核心功能可交互
-- 无控制台报错
-- 响应式布局正常
+Acceptance Criteria:
+- All core features are interactive
+- No console errors
+- Responsive layout works correctly
 
-PRD：
-[粘贴 PRD 内容]
+PRD:
+[Paste PRD content]
 ```
 
 ---
 
 ### 2. Architecture Design
 
-**定义**：设计系统架构，定义组件边界和数据流。
+**Definition**: Designing system architecture, defining component boundaries and data flows.
 
-**关键要素**：
-- **系统分层**：前端、后端、数据库
-- **组件设计**：组件职责、接口、依赖
-- **数据流**：数据如何在系统中流动
-- **API 设计**：接口定义、请求/响应格式
+**Key Elements**:
+- **System Layering**: Frontend, backend, database
+- **Component Design**: Component responsibilities, interfaces, dependencies
+- **Data Flow**: How data moves through the system
+- **API Design**: Interface definitions, request/response formats
 
-**架构图模板**：
+**Architecture Diagram Template**:
 
 ```markdown
-## 系统架构
+## System Architecture
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│   前端      │ →   │   后端      │ →   │   数据库    │
-│  React      │     │  FastAPI    │     │  Neo4j      │
+│   Frontend  │ →   │   Backend   │ →   │  Database   │
+│   React     │     │   FastAPI   │     │   Neo4j     │
 └─────────────┘     └─────────────┘     └─────────────┘
 ```
 
-## 组件树
+## Component Tree
 
 ```
 App
-├── Sidebar（左侧导航）
+├── Sidebar (Left Navigation)
 │   ├── Logo
 │   ├── NavMenu
 │   └── UserProfile
-├── Dashboard（仪表盘）
+├── Dashboard
 │   ├── MetricCards
 │   ├── RecentTasks
 │   └── QuickActions
-└── Workbench（工作台）
+└── Workbench
     ├── TaskPanel
     ├── AgentChat
     └── ContextPanel
 ```
 
-## 数据流
+## Data Flow
 
-1. 用户点击 → 前端组件
-2. 前端组件 → API 调用
-3. API 调用 → 后端处理
-4. 后端处理 → 数据库查询
-5. 数据库查询 → 结果返回
-6. 结果返回 → 前端渲染
+1. User Click → Frontend Component
+2. Frontend Component → API Call
+3. API Call → Backend Processing
+4. Backend Processing → Database Query
+5. Database Query → Return Result
+6. Return Result → Frontend Rendering
 
-## API 契约
+## API Contract
 
-| 端点 | 方法 | 描述 | 请求 | 响应 |
-|------|------|------|------|------|
-| /api/tasks | GET | 获取任务列表 | - | Task[] |
-| /api/tasks | POST | 创建任务 | Task | Task |
-| /api/tasks/:id | PUT | 更新任务 | Task | Task |
-| /api/tasks/:id | DELETE | 删除任务 | - | - |
+| Endpoint | Method | Description | Request | Response |
+|----------|--------|-------------|---------|----------|
+| /api/tasks | GET | Get task list | - | Task[] |
+| /api/tasks | POST | Create task | Task | Task |
+| /api/tasks/:id | PUT | Update task | Task | Task |
+| /api/tasks/:id | DELETE | Delete task | - | - |
 ```
 
 ---
 
 ### 3. Quality Assurance
 
-**定义**：保证 AI 产出的代码质量，识别和修复问题。
+**Definition**: Ensuring the quality of AI-generated code, identifying and fixing issues.
 
-**关键要素**：
-- **功能验证**：核心功能是否正常工作
-- **边界测试**：异常情况是否处理正确
-- **性能评估**：响应时间、资源占用
-- **安全检查**：是否有安全漏洞
+**Key Elements**:
+- **Functional Verification**: Do core features work correctly?
+- **Edge Case Testing**: Are anomalies handled properly?
+- **Performance Evaluation**: Response times, resource usage
+- **Security Review**: Are there security vulnerabilities?
 
-**质量检查清单**：
+**Quality Checklist**:
 
 ```markdown
-## 功能验证
-- [ ] 核心功能 1 正常工作
-- [ ] 核心功能 2 正常工作
-- [ ] 核心功能 3 正常工作
+## Functional Verification
+- [ ] Core feature 1 works correctly
+- [ ] Core feature 2 works correctly
+- [ ] Core feature 3 works correctly
 
-## 边界测试
-- [ ] 空输入处理
-- [ ] 超长输入处理
-- [ ] 特殊字符处理
-- [ ] 并发请求处理
+## Edge Case Testing
+- [ ] Empty input handling
+- [ ] Excessively long input handling
+- [ ] Special character handling
+- [ ] Concurrent request handling
 
-## 性能评估
-- [ ] 页面加载时间 < 3s
-- [ ] API 响应时间 < 500ms
-- [ ] 内存占用合理
+## Performance Evaluation
+- [ ] Page load time < 3s
+- [ ] API response time < 500ms
+- [ ] Reasonable memory usage
 
-## 安全检查
-- [ ] 输入验证
-- [ ] 权限控制
-- [ ] 敏感数据保护
-- [ ] SQL 注入防护
+## Security Review
+- [ ] Input validation
+- [ ] Access control
+- [ ] Sensitive data protection
+- [ ] SQL injection prevention
 ```
 
 ---
 
 ### 4. Iteration Management
 
-**定义**：管理 AI 开发的迭代过程，快速验证和优化。
+**Definition**: Managing the iteration process of AI development, rapid validation and optimization.
 
-**关键要素**：
-- **快速验证**：快速验证需求和假设
-- **持续优化**：基于反馈持续优化
-- **版本控制**：保留有用的代码版本
-- **知识沉淀**：总结经验教训
+**Key Elements**:
+- **Rapid Validation**: Quickly validate requirements and assumptions
+- **Continuous Improvement**: Optimize based on feedback
+- **Version Control**: Preserve useful code versions
+- **Knowledge Capture**: Document lessons learned
 
-**迭代流程**：
+**Iteration Process**:
 
 ```markdown
-## 迭代流程
+## Iteration Process
 
-### 1. 需求输入（10 min）
-- 明确修改点
-- 定义验收标准
+### 1. Requirements Input (10 min)
+- Clarify the changes needed
+- Define acceptance criteria
 
-### 2. AI 生成（10 min）
-- 用 Prompt 描述需求
-- 生成代码
+### 2. AI Generation (10 min)
+- Describe requirements in a prompt
+- Generate code
 
-### 3. 验证测试（10 min）
-- 测试功能
-- 验证边界
+### 3. Validation Testing (10 min)
+- Test functionality
+- Verify edge cases
 
-### 4. 反馈优化（按需）
-- 记录问题
-- 优化 Prompt
-- 重新生成
+### 4. Feedback & Refinement (As Needed)
+- Document issues
+- Refine the prompt
+- Regenerate
 ```
 
 ---
 
-## 工具链
+## Toolchain
 
-### 必备工具
+### Essential Tools
 
-| 工具 | 用途 | 推荐 |
-|------|------|------|
-| Claude Code | AI 编码助手 | ✅ |
-| Cursor | AI 编码助手 | ✅ |
-| Node.js | 运行环境 | 18+ |
-| Git | 版本控制 | ✅ |
+| Tool | Purpose | Recommended |
+|------|---------|-------------|
+| Claude Code | AI coding assistant | ✅ |
+| Cursor | AI coding assistant | ✅ |
+| Node.js | Runtime environment | 18+ |
+| Git | Version control | ✅ |
 
-### 推荐工具
+### Recommended Tools
 
-| 工具 | 用途 | 推荐 |
-|------|------|------|
-| Figma | 设计参考 | 可选 |
-| Excalidraw | 线框图 | 可选 |
-| Vercel | 快速部署 | 可选 |
-
----
-
-## 实践案例
-
-### 案例 1：Fab Agent Space
-
-**需求**：半导体 FAB 工程师的智能知识引擎
-
-**技术栈**：React 19 + Vite 8 + Tailwind CSS 4
-
-**开发过程**：
-1. 需求定义（10 min）
-2. 架构设计（20 min）
-3. 代码生成（30 min）
-4. 迭代优化（按需）
-
-**成果**：
-- 10 个核心组件
-- 完整的交互逻辑
-- 端口 5175
-- GitHub Pages 部署
+| Tool | Purpose | Recommended |
+|------|---------|-------------|
+| Figma | Design reference | Optional |
+| Excalidraw | Wireframing | Optional |
+| Vercel | Quick deployment | Optional |
 
 ---
 
-### 案例 2：Ontology OS
+## Practice Cases
 
-**需求**：企业本体操作系统
+### Case 1: Fab Agent Space
 
-**技术栈**：
-- 前端：React 18 + D3.js + Tailwind CSS 4
-- 后端：FastAPI + Neo4j + NetworkX
-- LLM：MiniMax / OpenAI / Anthropic
+**Requirement**: An intelligent knowledge engine for semiconductor FAB engineers
 
-**开发过程**：
-1. 逆向工程 Palantir AIP
-2. 设计本体架构
-3. 实现数据流水线
-4. 集成 LLM 推理
+**Tech Stack**: React 19 + Vite 8 + Tailwind CSS 4
 
-**成果**：
-- 53 个节点、100+ 条语义链路
-- ReAct 智能体
-- HITL 审批流程
-- 多 LLM 支持
+**Development Process**:
+1. Requirements Definition (10 min)
+2. Architecture Design (20 min)
+3. Code Generation (30 min)
+4. Iterative Refinement (As Needed)
 
----
-
-## 最佳实践
-
-### 1. 先理解再构建
-
-**错误做法**：
-- 直接让 AI 写代码
-- 不理解架构就开始改
-- 遇到问题就重新开始
-
-**正确做法**：
-- 先理解业务需求
-- 先设计系统架构
-- 先定义接口契约
-
-### 2. 定义清晰的边界
-
-**错误做法**：
-- 模糊的需求描述
-- 不明确的技术约束
-- 没有验收标准
-
-**正确做法**：
-- 结构化的需求文档
-- 明确的技术约束
-- 具体的验收标准
-
-### 3. 迭代而非重写
-
-**错误做法**：
-- 遇到问题就重写
-- 不保留之前的代码
-- 每次都从零开始
-
-**正确做法**：
-- 在现有基础上迭代
-- 保留有用的代码
-- 逐步优化和改进
-
-### 4. 验证而非信任
-
-**错误做法**：
-- 完全信任 AI 的输出
-- 不测试就使用
-- 不验证边界情况
-
-**正确做法**：
-- 测试关键功能
-- 验证边界情况
-- 检查错误处理
+**Results**:
+- 10 core components
+- Complete interaction logic
+- Port 5175
+- GitHub Pages deployment
 
 ---
 
-## 效率对比
+### Case 2: Ontology OS
 
-| 阶段 | 传统开发 | Harness Engineering | 提升 |
-|------|----------|---------------------|------|
-| 需求分析 | 2-3 天 | 10 min | 15x |
-| 架构设计 | 3-5 天 | 20 min | 15x |
-| 代码开发 | 1-2 周 | 30 min | 20x |
-| 迭代优化 | 2-3 天/轮 | 10 min/轮 | 15x |
-| **总计** | **2-4 周** | **1-2 小时** | **15-20x** |
+**Requirement**: An enterprise ontology operating system
 
----
+**Tech Stack**:
+- Frontend: React 18 + D3.js + Tailwind CSS 4
+- Backend: FastAPI + Neo4j + NetworkX
+- LLM: MiniMax / OpenAI / Anthropic
 
-## 总结
+**Development Process**:
+1. Reverse-engineered Palantir AIP
+2. Designed ontology architecture
+3. Implemented data pipeline
+4. Integrated LLM reasoning
 
-**核心理念**：
-- 不是"写代码"，是"驾驭 AI 写代码"
-- 不是"学编程"，是"学架构思维"
-- 不是"管理开发"，是"管理 AI 开发"
-
-**核心技能**：
-- Prompt Engineering（给 AI 的指令设计）
-- Architecture Design（系统架构设计）
-- Quality Assurance（质量保证和验证）
-- Iteration Management（迭代管理）
-
-**效率提升**：
-- 从需求到原型：2-4 周 → 1-2 小时
-- 迭代周期：2-3 天 → 10 分钟
-- 沟通成本：多次会议 → 一次对话
+**Results**:
+- 53 nodes, 100+ semantic links
+- ReAct agent
+- HITL approval workflow
+- Multi-LLM support
 
 ---
 
-*最后更新：2026-05-18*
-*基于 Ontology OS 和 Fab Agent Space 项目实践*
+## Best Practices
+
+### 1. Understand Before Building
+
+**Wrong Approach**:
+- Having AI write code directly
+- Making changes without understanding the architecture
+- Starting over when encountering problems
+
+**Right Approach**:
+- Understand the business requirements first
+- Design the system architecture first
+- Define the interface contracts first
+
+### 2. Define Clear Boundaries
+
+**Wrong Approach**:
+- Vague requirement descriptions
+- Unclear technical constraints
+- No acceptance criteria
+
+**Right Approach**:
+- Structured requirement documents
+- Explicit technical constraints
+- Specific acceptance criteria
+
+### 3. Iterate, Don't Rewrite
+
+**Wrong Approach**:
+- Rewriting when encountering problems
+- Not preserving previous code
+- Starting from scratch every time
+
+**Right Approach**:
+- Iterate on the existing foundation
+- Preserve useful code
+- Optimize and improve incrementally
+
+### 4. Verify, Don't Trust
+
+**Wrong Approach**:
+- Fully trusting AI output
+- Using without testing
+- Not verifying edge cases
+
+**Right Approach**:
+- Test key features
+- Verify edge cases
+- Check error handling
+
+---
+
+## Efficiency Comparison
+
+| Phase | Traditional Development | Harness Engineering | Improvement |
+|-------|------------------------|---------------------|-------------|
+| Requirements Analysis | 2–3 days | 10 min | 15x |
+| Architecture Design | 3–5 days | 20 min | 15x |
+| Code Development | 1–2 weeks | 30 min | 20x |
+| Iterative Refinement | 2–3 days/round | 10 min/round | 15x |
+| **Total** | **2–4 weeks** | **1–2 hours** | **15–20x** |
+
+---
+
+## Summary
+
+**Core Philosophy**:
+- Not "writing code" — "harnessing AI to write code"
+- Not "learning to code" — "learning to think architecturally"
+- Not "managing development" — "managing AI development"
+
+**Core Skills**:
+- Prompt Engineering (Designing instructions for AI)
+- Architecture Design (System architecture design)
+- Quality Assurance (Quality assurance and validation)
+- Iteration Management (Iteration management)
+
+**Efficiency Gains**:
+- From requirements to prototype: 2–4 weeks → 1–2 hours
+- Iteration cycle: 2–3 days → 10 minutes
+- Communication cost: Multiple meetings → One conversation
+
+---
+
+*Last Updated: 2026-05-26*
+*Based on practice from the Ontology OS and Fab Agent Space projects*
